@@ -1,5 +1,101 @@
 .header{
     position: relative;
-    background-color: aqua;
-    height: 200px;
+
+    background: linear-gradient(-45deg,
+       #00b8d8, /* Первый цвет */
+       #901bbe, /* Второй цвет */
+       #23d5ab /* Четвертый цвет */
+     );
+     background-size: 400% 400%;
+     animation: gradient 30s ease infinite;
+
+
+     height: 100vh;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.header--social{
+    position: absolute;
+    top: 45%;
+    left: -6%;
+    transform: rotate(-90deg);
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    .icon--social{
+        gap: 15px;
+    }
+    .icon {
+	width: 20px;
+	height: 20px;
+    }
+}
+
+.header--img{
+    max-width: 400px;
+    width: 100%;
+    img{
+        border-radius: 20px;
+    }
+}
+
+.header--social--text{
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.header--line{
+    width: 70px;
+    height: 2px;
+    background-color: var(--black);
+}
+
+.header--name{
+    margin-bottom: 10px;
+}
+
+.header--title{
+    max-width: 530px;
+    margin-bottom: 25px;
+}
+
+.header--links{
+    display: flex;
+    align-items: center;
+}
+
+.header--link{
+    display: inline-block;
+	padding: 12px 25px;
+
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+
+    transition: color 0.2s ease-in;
+    &:hover{
+        color: var(--accent);
+    }
+}
+
+
+@keyframes gradient {
+ 
+ 0% {
+     background-position: 0% 50%;
+ }
+ 50% {
+     background-position: 100% 50%;
+ }
+ 
+ 100% {
+     background-position: 0% 50%;
+ }
 }

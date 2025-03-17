@@ -1,7 +1,30 @@
 <header class="header">
     @@include('btn-nav.html')
+    <div class="header--social">
+        <div class="header--social--text">Социальные сети</div>
+        <div class="header--line"></div>
+        @@include('social.html')
+    </div>
+
     <div class="container">
-        
+        <div class="d-flex-center">
+            <div class="header--text">
+                <div class="title-2 header--name title-circle">Меня зовут Константин Хохлов</div>
+                <h1 class="title-1 header--title">Я web-разработчик из города Краснодар</h1>
+                <div class="header--links">
+                    <a href="#portfolio" class="btn-main header--link">Портфолио</a>
+                    <a href="#about" class="header--link header--link-transparent">Про меня</a>
+                </div>
+            </div>
+
+            <div class="header--img">
+                <img 
+                    src="../../img/block/header/Me.jpeg" 
+                    srcset="../../img/block/header/Me@2x.jpeg 2x" 
+                    alt="Моя фотография с Эльбруса"
+                >
+            </div>
+        </div>
     </div>
 </header>
 <!-- @@include('mobile-nav.html') -->
