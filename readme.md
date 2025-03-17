@@ -19,5 +19,3 @@ gulp
 ```
 gulp docs
 ```
-
-[Смотреть демо](https://user.github.io/repo/)

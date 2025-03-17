@@ -1,5 +1,3 @@
-import mobileNav from './modules/mobile-nav.js';
-mobileNav();
+import btnNav from "./modules/btn-nav";
 
-// import isAvifWebp from 'avif-webp-checker';
-// isAvifWebp({ mode: 'webp' });
+btnNav();

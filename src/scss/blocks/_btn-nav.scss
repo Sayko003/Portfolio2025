@@ -1,0 +1,48 @@
+.btn--nav{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    row-gap: 6px;
+
+    cursor: pointer;
+    z-index: 0;
+}
+.btn--nav:hover{
+    .btn--span{
+        background-color: var(--white);
+    }
+}
+
+.btn--span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--black);
+
+    transition: all 0.2s ease-in;
+}
+
+.btn--span:nth-child(2){
+    width: 36px;
+}
+
+.menu .btn--nav{
+    top: 25px;
+    right: 25px;
+}
+
+.menu .btn--span:nth-child(2){
+    opacity: 0;
+}
+
+.menu .btn--span:nth-child(1){
+    transform: rotate(-45deg) translate(-43%, -50%);
+}
+
+.menu .btn--span:nth-child(3){
+    transform: rotate(45deg) translate(-45%, 0%);
+}
