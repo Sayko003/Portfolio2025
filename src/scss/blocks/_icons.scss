@@ -9,9 +9,15 @@
 }
 
 .icon--item{
-    fill: var(--text-color);
+    fill: var(--black);
     transition: fill 0.2s ease-in;
     &:hover{
-        fill: #fff;
+        fill: var(--white);
     }
 }
+
+@media (hover: hover) and (pointer: coarse) {
+  .icon--item:hover,.icon--item:active, .icon--item:focus{
+        fill: var(--black);
+    }
+} 

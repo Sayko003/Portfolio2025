@@ -1,5 +1,5 @@
 .btn--nav{
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 30px;
 
@@ -13,7 +13,7 @@
 }
 .btn--nav:hover{
     .btn--span{
-        background-color: var(--white);
+        background-color: var(--accent);
     }
 }
 
@@ -30,19 +30,16 @@
     width: 36px;
 }
 
-.menu .btn--nav{
-    top: 25px;
-    right: 25px;
-}
+@media (hover: hover) and (pointer: coarse) {
+  .btn--nav:hover,.btn--nav:active, .btn--nav:focus{
+        .btn--span{
+            background-color: var(--black);  
+        }
+    }
+} 
 
-.menu .btn--span:nth-child(2){
-    opacity: 0;
-}
-
-.menu .btn--span:nth-child(1){
-    transform: rotate(-45deg) translate(-43%, -50%);
-}
-
-.menu .btn--span:nth-child(3){
-    transform: rotate(45deg) translate(-45%, 0%);
+@include mobile{
+    .btn--nav{
+        right: 20px;
+    }
 }

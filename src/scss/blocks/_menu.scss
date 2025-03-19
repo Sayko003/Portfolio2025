@@ -44,7 +44,28 @@
     left:0;
     z-index: 2;
 }
+.menu .btn--nav{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+.menu .btn--nav:hover{
+    .btn--span{
+            background-color: var(--white);  
+    }
+}
 
+.menu .btn--span:nth-child(2){
+    opacity: 0;
+}
+
+.menu .btn--span:nth-child(1){
+    transform: rotate(-45deg) translate(-43%, -50%);
+}
+
+.menu .btn--span:nth-child(3){
+    transform: rotate(45deg) translate(-45%, 0%);
+}
 .menu-active .overlay{
     z-index: 1;
     background-color:rgba(255,255,255, 0.75);
@@ -87,6 +108,17 @@
         color: var(--black);
     }
 }
+
+@media (hover: hover) and (pointer: coarse) {
+  .menu li a:hover,.menu li a:active, .menu li a:focus{
+        background-color: var(--white);
+    }
+    .menu .btn--nav:hover, .menu .btn--nav:active, .menu .btn--nav:focus{
+        .btn--span{
+                background-color: var(--black);
+        }
+    }
+} 
 
 
 
