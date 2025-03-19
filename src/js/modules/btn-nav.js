@@ -8,7 +8,7 @@ function btnNav(){
 
     function clickBtn(btn){
         btn.addEventListener(`click`, () =>{
-        overflow.classList.toggle(`no-scroll`);
+        // overflow.classList.toggle(`no-scroll`);
 
         menu.classList.toggle(`menu-active`);
         });

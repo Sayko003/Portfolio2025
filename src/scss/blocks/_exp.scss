@@ -1,0 +1,137 @@
+.exp{
+    padding-bottom: 120px;
+}
+
+.exp .title-2 {
+    position: relative;
+    z-index: 1;
+    @include textCircleCenter;
+}
+
+.exp .subline{
+    margin-bottom: 60px;
+}
+.exp--wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.exp--blocks{
+    display: flex;
+    flex-direction: column; 
+    row-gap: 45px;
+    padding-left: 50px;
+    position: relative;
+    &::before{
+        content: "";
+
+        position: absolute;
+        top:0px;
+        left:0px;
+
+        width: 2px;
+        height: 100%;
+
+        background-color: var(--black);
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        top:-10px;
+        left:-7px;
+
+        width: 15px;
+        height: 15px;
+
+        border-radius: 100%;
+        background-color: var(--accent)
+    }
+}
+.exp--blocks-title{
+    font-weight: 700;
+    font-size: 20px;
+}
+.exp--block{
+    position: relative;
+
+    max-width: 425px;
+    &::before{
+        content: "";
+
+        position: absolute;
+        top:10px;
+        left:-50px;
+
+        width: 60px;
+        height: 2px;
+
+        background-color: var(--black);
+    }
+}
+
+.exp--sup{
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    padding-left: 18px;
+    margin-bottom: 12px;
+}
+
+
+.exp--title {
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.exp--subtitle {
+    font-weight: 500;
+    font-size: clamp(0.438rem, 0.335rem + 0.51vw, 0.75rem)
+}
+
+.exp--descr{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.exp--img{
+    position: relative;
+    z-index: 1;
+    @include textCircleCard;
+}
+
+.icon--exp-university{
+    width: 25px;
+    height: 25px;
+}
+
+.icon--exp-courses{
+    width: 25px;
+    height: 25px;
+}
+
+.icon--exp-front-end{
+    width: 25px;
+    height: 25px;
+}
+
+.icon--exp-designer{
+    width: 25px;
+    height: 25px;
+}
+
+@include tablet {
+    .exp{
+        padding-bottom: 40px;
+    }
+}
+
+@include mobile {
+    .exp--wrapper{
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .exp--block{
+        max-width: 100%;
+    }
+
+}
