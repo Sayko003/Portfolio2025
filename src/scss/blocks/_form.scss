@@ -107,6 +107,18 @@
     font-weight: 500;
     font-size: 12px;
 }
+.form--checkbox a{
+    color:rgb(160, 3, 252);
+    transition: color 0.2s ease;
+}
+.form--checkbox a:hover{
+    color: var(--accent);
+}
+@media (hover: hover) and (pointer: coarse){
+    .form--checkbox a:hover,.form--checkbox a:active, .form--checkbox a:focus{
+        color:rgb(160, 3, 252);
+    }
+}
 @include tablet {
     .form{
         padding-bottom: 50px;
