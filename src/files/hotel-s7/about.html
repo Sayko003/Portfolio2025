@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>S7 Hotels</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header__wrapper flex-center-bet">
+        <div class="header__block flex-center-bet">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/header/logo.png" alt="S7 Hotel Bityagovo и S7 Hotel Domodedovo">
+                </a>
+            </div>
+    
+            <div class="header__links flex-center-around">
+                <a href="#" class="header__link">S7 Hotel Bityagovo</a>
+                <a href="#" class="header__link">S7 Hotel Domodedovo</a>
+            </div>
+        </div>
+
+        <div class="header__contacts flex-center-bet">
+            <div class="header__phone">
+                <a href="tel:+74956510667" class="header__phone_link">+7 (495) 651-06-67</a>
+            </div>
+
+            <div class="header__lang">
+                <a href="#"></a>
+            </div>
+
+            <div class="header__word">
+                <a href="#">
+                    <img src="img/header/one-world.png" alt="One world">
+                </a>
+            </div>
+        </div>
+    </div>
+</header> 
+
+    <main class="main">
+        <section class="hero about-bg">
+            <div class="container">
+                <div class="hero__form">
+                    <div class="hero__tabs">
+                        <ul class="hero__list">
+                            <li class="hero__item hero__item_active">Проживание</li>
+                            <li class="hero__item">Беседки</li>
+                            <li class="hero__item">Конференц-зал</li>
+                            <li class="hero__item">Спортивный комплекс</li>
+                        </ul>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-1" value="Проживание">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" id="dateOne" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-2" value="Беседки">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-3" value="Конференц-зал">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-4" value="Спортивный комплекс">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="number about-main">
+            <div class="container">
+                <ul class="crumb flex-center-bet service-crumb">
+                    <li class="crumb__item"><a href="#">Главная</a></li>
+                    <li class="crumb__item">Об отеле</li>
+                    
+                </ul>
+
+                <div class="number__item flex-center-bet">
+                    <div class="number__text">
+                        <h1 class="number__title">Информация об S7 Hotel Domodedovo</h1>
+                    </div>
+
+                    <div class="number__descr">
+                        <p class="number__descr-text">Наша гостиница находится рядом с аэропортом Домодедово. У нас вы можете снять уютный номер, вкусно поесть и отдохнуть пока ожидаете свой рейс. Также наш отель популярен как локация для организации деловых мероприятий. У нас можно арендовать конференц-зал, переговорную, заказать фуршет и разместить всех участников бизнес-встречи в комфортных номерах.</p>
+                    </div>
+                </div>
+
+                <div class="number__slider">
+                    <div class="number__photo">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/number/number-1.png" alt="Фото отеля">
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <img src="img/number/number-2.png" alt="Фото отеля">
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <img src="img/number/number-1.png" alt="Фото отеля">
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <img src="img/number/number-2.png" alt="Фото отеля">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="number__arrows flex-center-bet">
+                        <div class="number-button-prev">
+                            <img src="img/svg/arow-slider.svg" alt="Стрелка влево">
+                        </div>
+                        <div class="number-button-next">
+                            <img src="img/svg/arow-slider.svg" alt="Стрелка вправо">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title">Аэропорт Домодедово отель — <br> номерной фонд и условия проживания</h2>
+                <div class="about__subtitle">Наш отель располагается в шестиэтажном современном здании. Номерной фонд — 135 <br> комфортабельных уютных номеров, спальных мест — 285 Варианты размещения гостей, <br> которые предлагает наш отель:</div>
+
+                <div class="about__block">
+                    <div class="about__img">
+                        <img src="img/about/card-1.png" alt="Стандартный двухместный номер с 1 кроватью или 2 отдельными кроватями">
+                    </div>
+
+                    <div class="about__text">
+                        <div class="about__text_top">
+                            <h3 class="about__text_title">Стандартный двухместный номер с <br> 1 кроватью или 2 отдельными кроватями</h3>
+                            <img src="img/about/star.png" alt="Звезды">
+                        </div>
+
+                        <div class="about__map">
+                            <div class="about__map_img">
+                                <img src="img/about/map.png" alt="Адресс">
+                            </div>
+                            <div class="about__map_descr">Отель S7 Domodedovo, Каширское шоссе 13 литера А</div>
+                        </div>
+
+                        <div class="about__descr">Номера категории «стандарт» выбирают гости, предпочитающие функциональность, удобство и практичность.</div>
+
+                        <div class="about__price">
+                            <div class="about__price_plus">
+                                <img src="img/about/plus.png" alt="Услуги">
+                            </div>
+
+                            <div class="about__price_block">
+                                <div class="about__price_wrapper">
+                                    <div class="about__price_buy">от 3 000 ₽</div>
+                                    <div class="about__price_descr">стоимость размещения</div>
+                                </div>
+                                <button class="about__price_btn">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__block">
+                    <div class="about__img">
+                        <img src="img/about/card-2.png" alt="Стандартный двухместный номер с 1 кроватью или 2 отдельными кроватями">
+                    </div>
+
+                    <div class="about__text">
+                        <div class="about__text_top">
+                            <h3 class="about__text_title">Номер-студия с кроватью <br> размера «King-size»</h3>
+                            <img src="img/about/star.png" alt="Звезды">
+                        </div>
+
+                        <div class="about__map">
+                            <div class="about__map_img">
+                                <img src="img/about/map.png" alt="Адресс">
+                            </div>
+                            <div class="about__map_descr">Отель S7 Domodedovo, Каширское шоссе 13 литера А</div>
+                        </div>
+
+                        <div class="about__descr">Номера категории «стандарт» выбирают гости, предпочитающие функциональность, удобство и практичность.</div>
+
+                        <div class="about__price">
+                            <div class="about__price_plus">
+                                <img src="img/about/plus.png" alt="Услуги">
+                            </div>
+
+                            <div class="about__price_block">
+                                <div class="about__price_wrapper">
+                                    <div class="about__price_buy">от 3 000 ₽</div>
+                                    <div class="about__price_descr">стоимость размещения</div>
+                                </div>
+                                <button class="about__price_btn">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__block">
+                    <div class="about__img">
+                        <img src="img/about/card-3.png" alt="Стандартный двухместный номер с 1 кроватью или 2 отдельными кроватями">
+                    </div>
+
+                    <div class="about__text">
+                        <div class="about__text_top">
+                            <h3 class="about__text_title">Семейный номер</h3>
+                            <img src="img/about/star.png" alt="Звезды">
+                        </div>
+
+                        <div class="about__map">
+                            <div class="about__map_img">
+                                <img src="img/about/map.png" alt="Адресс">
+                            </div>
+                            <div class="about__map_descr">Отель S7 Domodedovo, Каширское шоссе 13 литера А</div>
+                        </div>
+
+                        <div class="about__descr">Просторный и удобный номер категории «семейный». Частый выбор гостей, предпочитающих комфортный отдых или путешествующих с семьей. Наш отель предлагает одноместное, двухместное и трехместное размещение.</div>
+
+                        <div class="about__price">
+                            <div class="about__price_plus">
+                                <img src="img/about/plus.png" alt="Услуги">
+                            </div>
+
+                            <div class="about__price_block">
+                                <div class="about__price_wrapper">
+                                    <div class="about__price_buy">от 3 000 ₽</div>
+                                    <div class="about__price_descr">стоимость размещения</div>
+                                </div>
+                                <button class="about__price_btn">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about__subblock">По просьбе наших гостей мы можем организовать в номере-студии или в семейном номере дополнительное спальное место, установив евро- раскладушку. Кроме посуточной аренды действует услуга аренды на 4, 8 и 12 часов. Бронирование номера почасово только по телефону.</div>
+            </div>
+        </section>
+
+        <section class="picture">
+            <img src="img/about/bg-stol.png" alt="Фото столовой">
+        </section>
+
+        <section class="canteen">
+            <div class="container">
+                <div class="canteen__wrapper">
+                    <h2 class="canteen__title">Питание для гостей</h2>
+                    <div class="canteen__block">
+                        <div class="canteen__descr">Наша гостиница позаботилась о вкусном питании для своих гостей. Приглашаем вас посетить ресторан круглосуточного питания с европейской кухней. Для вас работает удобная линия раздачи, одновременно ресторан может вместить до 80 человек. Также наши постоянные гости советуют заглянуть в уютный лобби-бар, рассчитанный на 25 посетителей. Здесь вы можете заказать еду по меню a la carte, пообщаться с друзьями или поработать за компьютером в приятной обстановке.</div>
+
+                        <div class="canteen__icons">
+                            <div class="canteen__icon">
+                                <div class="canteen__icon_img">
+                                    <img src="img/about/bar.png" alt="Бар">
+                                </div>
+
+                                <div class="canteen__icon_text">
+                                    <div class="canteen__icon_title">Лобби-бар</div>
+                                    <div class="canteen__icon_subtitle">Для постоянных гостей</div>
+                                </div>
+                            </div>
+
+                            <div class="canteen__icon">
+                                <div class="canteen__icon_img">
+                                    <img src="img/about/rest.png" alt="Ресторан">
+                                </div>
+
+                                <div class="canteen__icon_text">
+                                    <div class="canteen__icon_title">Ресторан</div>
+                                    <div class="canteen__icon_subtitle">Европейская кухня</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="inn">
+            <div class="container">
+                <h2 class="inn__title">Гостиница Домодедово у аэропорта: сервис для гостей</h2>
+
+                <div class="inn__flex">
+                    <div class="inn__wrapper">
+                        <div class="inn__block">
+                            <div class="inn__img">
+                                <img src="img/about/air-1.png" alt="">
+                            </div>
+                            <div class="inn__text">
+                                <h3 class="inn__text_title">Помогаем в организации деловых мероприятий «под ключ»</h3>
+                                <div class="inn__text_descr">На территории нашего отеля есть два больших конференц-зала и комфортная переговорная комната. Все локации оснащены необходимым оборудованием для проведения бизнес-встреч, семинаров, совещаний. Гостиница возьмет на себя решение вопросов, связанных с размещением, питанием и сопровождением гостей.В нашем ресторане можно организовать кофе-брейки, деловые обеды, фуршет, комплексные обеды для всех участников мероприятия</div>
+                            </div>
+                        </div>
+    
+                        <div class="inn__bron">Чтобы забронировать номер в S7 Hotel Domodedovo, достаточно перейти на официальный сайт нашего отеля и оставить заявку.</div>
+    
+                        <div class="inn__see">Будем рады видеть вас в числе наших гостей!</div>
+                    </div>
+    
+                    <div class="inn__wrapper">
+                        <div class="inn__block">
+                            <div class="inn__img">
+                                <img src="img/about/air-2.png" alt="">
+                            </div>
+                            <div class="inn__text">
+                                <h3 class="inn__text_title">Принимаем заявки ни проведение банкетов и корпоративов</h3>
+                                <div class="inn__text_descr">Наш ресторан вмещает до 80 человек, заказать банкет можно на день рождения, любой праздник, корпоратив. Мы подаем блюда европейской кухни, готовим вкусно, гарантируем первоклассный сервис.</div>
+                            </div>
+                        </div>
+    
+                        <div class="inn__block">
+                            <div class="inn__img">
+                                <img src="img/about/air-4.png" alt="">
+                            </div>
+                            <div class="inn__text">
+                                <h3 class="inn__text_title">Комфорт для каждого гостя</h3>
+                                <div class="inn__text_descr">На каждом этаже есть мягкий уголок для отдыха, установлен кулер с холодной и горячей водой. Гости могут воспользоваться услугами прачечной и гладильной комнатой. Также наши гости могут играть в русский бильярд, расположенный в отдельной комнате на цокольном этаже (услуга платная).</div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="inn__wrapper">
+                        <div class="inn__block">
+                            <div class="inn__img">
+                                <img src="img/about/air-3.png" alt="">
+                            </div>
+                            <div class="inn__text">
+                                <h3 class="inn__text_title">Детский уголок</h3>
+                                <div class="inn__text_descr">Рады, когда наш отель выбирают семьи с маленькими детьми. Мы подготовили уютные семейные номера, а чтобы вам было комфортнее в ресторане, обустроили детский уголок со стульчиками, детской кухней и посудой, игрушками, детскими конструкторами Малыши довольны, а родители спокойны</div>
+                            </div>
+                        </div>
+    
+                        <div class="inn__block">
+                            <div class="inn__img">
+                                <img src="img/about/air-5.png" alt="">
+                            </div>
+                            <div class="inn__text">
+                                <h3 class="inn__text_title">Бесплатный сервис</h3>
+                                <div class="inn__text_descr">Гостиница предлагает следующие услуги: бесплатный wi-fi, замена постельного белья 1 раз в 3 дня, утреннее пробуждение (про запросу), ежедневная уборка номеров и замена полотенец, хранение багажа в специальной багажной комнате. Также по вашей просьбе мы можем вызвать вам такси.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="question">
+            <div class="container">
+                <h2 class="question__title-main">Часто задаваемые вопросы</h2>
+                <div class="question__block">
+                    <div class="question__intro">
+                        <div class="question__title">Есть ли в отеле - камера хранения/комната для багажа?</div>
+                    </div>
+
+                    <div class="question__content">
+                        <p>Гостям отеля доступны следующие услуги: бильярд, кабельное/спутниковое телевидение, wifi в отеле, доступ в интернет.</p>
+                    </div>
+
+                    <div class="question__plus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="question__block">
+                    <div class="question__intro">
+                        <div class="question__title">Какие развлекательные услуги доступны при отеле?</div>
+                    </div>
+
+                    <div class="question__content">
+                        <p>Гостям отеля доступны следующие услуги: бильярд, кабельное/спутниковое телевидение, wifi в отеле, доступ в интернет.</p>
+                    </div>
+
+                    <div class="question__plus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="question__block">
+                    <div class="question__intro">
+                        <div class="question__title">Регистрация времени заезда и выезда в отель S7 HotelDomodedovo?</div>
+                    </div>
+
+                    <div class="question__content">
+                        <p>Гостям отеля доступны следующие услуги: бильярд, кабельное/спутниковое телевидение, wifi в отеле, доступ в интернет.</p>
+                    </div>
+
+                    <div class="question__plus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="question__block">
+                    <div class="question__intro">
+                        <div class="question__title">Что включено в стоимость услуги «завтрак»?</div>
+                    </div>
+
+                    <div class="question__content">
+                        <p>Гостям отеля доступны следующие услуги: бильярд, кабельное/спутниковое телевидение, wifi в отеле, доступ в интернет.</p>
+                    </div>
+
+                    <div class="question__plus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="question__block">
+                    <div class="question__intro">
+                        <div class="question__title">Время работы лобби- бара?</div>
+                    </div>
+
+                    <div class="question__content">
+                        <p>Гостям отеля доступны следующие услуги: бильярд, кабельное/спутниковое телевидение, wifi в отеле, доступ в интернет.</p>
+                    </div>
+
+                    <div class="question__plus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="question__block">
+                    <div class="question__intro">
+                        <div class="question__title">Есть ли почасовые тарифы?</div>
+                    </div>
+
+                    <div class="question__content">
+                        <p>Гостям отеля доступны следующие услуги: бильярд, кабельное/спутниковое телевидение, wifi в отеле, доступ в интернет.</p>
+                    </div>
+
+                    <div class="question__plus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="question__block">
+                    <div class="question__intro">
+                        <div class="question__title">Есть ли у вас Room-Service?</div>
+                    </div>
+
+                    <div class="question__content">
+                        <p>Гостям отеля доступны следующие услуги: бильярд, кабельное/спутниковое телевидение, wifi в отеле, доступ в интернет.</p>
+                    </div>
+
+                    <div class="question__plus">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A019b36e0354450fcd5d324027361b278c800db2da470293af90857e1f9c10e04&amp;source=constructor" width="100%" height="380" frameborder="0"></iframe>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+    <div class="container flex-center-bet">
+        <div class="footer__year">&copy; S7 2023</div>
+        <div class="footer__links flex-center-around">
+            <a href="#" class="footer__link">Правовая информация</a>
+            <a href="#" class="footer__link">S7 Hotel Bityagovo</a>
+            <a href="#" class="footer__link">S7 Hotel Domodedovo</a>
+        </div>
+
+        <div class="footer__phones">
+            <a href="tel:74956510667" class="footer__phone">+7 (495) 651-06-67</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

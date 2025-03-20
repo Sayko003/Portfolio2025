@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Chimony О Нас</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header__wrapper">
+        <div class="header__logo">
+            <a href="#">
+                <svg>
+                    <use xlink:href="img/sprite.svg#header-logo"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="header__menu">
+            <ul class="header__list">
+                <li class="header__item"><a href="#services">услуги</a></li>
+                <li class="header__item"><a href="#keys">кейсы</a></li>
+                <li class="header__item"><a href="#about">о нас</a></li>
+                <li class="header__item"><a href="#news">новости рынка китая</a></li>
+                <li class="header__item"><a href="#blog">блог</a></li>
+                <li class="header__item"><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="header__search">
+            <form action="#">
+                <input type="text" placeholder="Поиск">
+                <button type="submit">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#header-search"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="header__contacts">
+            <div class="header__phone">
+                <a href="tel:88008888888">8 (800) 888-88-88</a>
+            </div>
+
+            <a class="btn btn-p btn-w160 modal__link " data-title ="Заголовок работает" data-input-name = "Hidden-name" data-input-id="Id-Hidden" data-value = "Lalala">
+                бесплатная консультация
+            </a>
+        </div>
+        
+
+        <div class="header__mobile_phone">
+            <a href="tel:88888888">
+                <svg>
+                    <use xlink:href="img/sprite.svg#header-phone"></use>
+                </svg>
+            </a>
+        </div>
+        <form action="#" class="header__mobile">
+            <div class="header__mobile_input">
+                <input type="text" class="input" placeholder="Поиск">
+                <button class="mobile-search" type="submit">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#header-search"></use>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="header__mobile_search">
+                <svg>
+                    <use xlink:href="img/sprite.svg#header-search"></use>
+                </svg>
+            </div>
+            
+        </form>
+
+        <div class="header__mobile_burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+    <div class="modal">
+    <div class="modal__wrapper">
+        <div class="menu__scroll">
+            <div class="menu__scrollY">
+                <div class="modal__block">
+                    <div class="modal__text">
+                        <h2 class="modal__title">Бесплатная консультация</h2>
+                        <div class="modal__close">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#modal-close"></use>
+                            </svg>
+                        </div>
+                    </div>
+        
+                    <div class="modal-form">
+                        <form action="#" class="modal__form">
+                            <div class="modal__form__wrapper">
+                                <label for="modal-name">Имя:</label>
+                                <input id="modal-name" type="text" name="name" placeholder="Ваше имя">
+                                <label for="modal-tel">Телефон:</label>
+                                <input id="modal-tel" type="text" name="phone" placeholder="Ваше телефон">
+                                <label for="modal-email">Email:</label>
+                                <input id="modal-email" type="text" name="email" placeholder="Ваше емейл">
+                            </div>
+                            <div class="modal__buttons checkbox">
+                                <div class="modal__form__text">
+                                    <input type="checkbox" id="modal" class="custom-checkbox" checked>
+                                    <label for="modal" class="modal__police">я согласен(а) с <a href="#"> политикой конфиденциальности</a></label>
+                                </div>
+                                <button type="submit" class="modal__btn">отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        
+    </div>
+</div>
+    <div class="menu">
+    <div class="container">
+        <div class="menu__scroll">
+            <div class="menu__scrollY">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#services">услуги</a></li>
+                    <li class="menu__item"><a href="#keys">кейсы</a></li>
+                    <li class="menu__item"><a href="#abot">о нас</a></li>
+                    <li class="menu__item"><a href="#news">новости рынка китая</a></li>
+                    <li class="menu__item"><a href="#blog">блог</a></li>
+                    <li class="menu__item"><a href="#contacts">Контакты</a></li>
+                </ul>
+        
+                <div class="menu__contacts">
+                    <div class="menu__wrapper">
+                        <h2 class="menu__title">Контакты:</h2>
+                        <div class="menu__tel"> <a href="tel:88008888888">8 (800) 888-88-88</a></div>
+                        <div class="menu__email"> <a href="mailto:CHIMONY@GMAIL.COM">CHIMONY@GMAIL.COM</a></div>
+                    </div>
+        
+                    <div class="menu__social">
+                        <h2 class="menu__title">Соц сети:</h2>
+                        <div class="menu__social_wrapper">
+                            <div class="menu__social_icon">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#social-whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </div>
+            
+                            <div class="menu__social_icon">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#social-inst"></use>
+                                    </svg>
+                                </a>
+                            </div>
+            
+                            <div class="menu__social_icon">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#social-message"></use>
+                                    </svg>
+                                </a>
+                            </div>
+            
+                            <div class="menu__social_icon">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#social-telegram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+        
+                <div class="menu__adress">
+                    <h2 class="menu__title"> Адреса офисов:</h2>
+                    <div class="menu__block">
+                        <div class="menu__block_adress">
+                            Atta Commerce (Shanghai) Co., Ltd.
+                            Address: Loushanguan Road 35, 6F, 121
+                            Shanghai, 200051, P.R. of China
+                        </div>
+        
+                        <div class="menu__block_adress">
+                            Atta Oy <br>
+                            Lakkasuontie 1, <br>
+                            Espoo, 02860, Finland
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="agent">
+    <div class="container">
+        <div class="agent__wrapper">
+            <div class="agent__text">
+                <div class="agent__link">
+                    <a href="index.html">Главная</a>
+                    <div class="agent__session">О нас</div>
+                </div>
+                <h1 class="title mb-24">Шанхайское агентство CHIMONY</h1>
+                <p class="agent__subtitle">Шанхайское агентство CHIMONY с 2006 года помогает компаниям продвигать товары и услуги на Китайском рынке.</p>
+                <a href="#" class="btn modal__link">связатся</a>
+            </div>
+
+            <div class="agent__img">
+                <img src="img/agent/agent-img.webp" alt="Chimony агенство" class="agent__img-dekstop">
+                <img src="img/agent/agent-img-mobile.webp" alt="Chimony агенство" class="agent__img-mobile">
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="help" id="help">
+    <div class="container">
+        <h2 class="title mb-60">Чем мы можем вам помочь?</h2>
+        <div class="help__wrapper">
+            <div class="help__card">
+                <div class="help__block">
+                    <h3 class="help__card__title">Организуем для вас комплексный маркетинг.</h3>
+                    <a href="#" class="btn modal__link" >Бесплатная консультация</a>
+                </div>
+                
+            </div>
+
+            <div class="help__card">
+                <div class="help__block">
+                    <h3 class="help__card__title">Создадим кастомную систему сквозной аналитики, позволяющей выстраивать каналы продвижения в эффективную воронку продаж. </h3>
+                    <a href="#" class="btn modal__link">Бесплатная консультация</a>
+                </div>
+            </div>
+
+            <div class="help__card">
+                <div class="help__block">
+                    <h3 class="help__card__title">Предоставим полный комплекс услуг, ориентированных на производительность и результат, для ведения бизнеса и увеличения продаж на рынке Китая.</h3>
+                    <a href="#" class="btn modal__link">Бесплатная консультация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="experience">
+    <div class="container">
+        <h2 class="title mb-60">Что показывает наш опыт в маркетинге на рынке Китая?</h2>
+        <div class="experience__img">
+            <img src="img/experience/experience-img.webp" alt="Опыт в Китае">
+        </div>
+
+        <div class="experience__block">
+            <h3 class="experience__block__title">Китайские потребители доводят «погоню за современным образом жизни» до крайности. </h3>
+
+            <p class="experience__block__descr">Основной идеей выступает не владение брендом, а желание потребителя заявить о своей собственности и принадлежности окружающему миру. «Камера ест первой» — популярная фраза в шанхайских снобистских ресторанах (когда люди сначала делаю фото еды, а только потом начинают есть), которая хорошо символизирует китайский лайфстайл-маркетинг. Значение иностранных брендов имеет колоссальную роль в <br> идентификации и самовыражении молодых потребителей. <span class="experience__block_span">Большое значение оказывает не только всемирно известные и масштабные бренды, но и «заморские особенности» — небольшие бренды, узкоспециализированные для определенный аудитории.</span>  </p>
+        </div>
+
+        <div class="experience__block">
+            <h3 class="experience__block__title">Молодое поколение Китая имеет хорошую потребительскую способность </h3>
+
+            <p class="experience__block__descr">
+                <span class="experience__block_span">Желание жить здесь и сейчас, и ярко выражать свой образ жизни через потребление.</span>Все больше Миллениалы и потребителей поколения Зумеров мотивированы возможностями оказать социальное воздействие и заботой об окружающей среде. Бренды, поддерживающие эти ценности создают каналы коммуникации с потребителями, включая контент, который отражает аудиторию на более значимом уровне.
+            </p>
+        </div>
+
+        <div class="experience__block">
+            <h3 class="experience__block__title">СПОСОБ ОБЩЕНИЯ И ВОСПРИЯТИЯ БРЕНДА</h3>
+
+            <p class="experience__block__descr">
+                Способ общения с потребителем на глубоком уровне наиболее эффективен: важно отвечать на их вопросы, становиться с ними близки, благодарить их, отвечать на отзывы, принимать их во внимание, учитывать их приоритеты и ценности при создании будущего контента.
+                <span class="experience__block_span-mt">Вместе с узнаваемостью, цифровое присутствие задает тон восприятия бренда китайскими потребителями. Отправка таргетированных сообщений вместо того, чтобы просто подталкивать к покупке продукта имеет решающее значение в стратегии продаж.</span>
+            </p>
+        </div>
+    </div>
+</section>
+    <section class="know">
+    <div class="container">
+        <div class="know__block mb-75">
+            <h2 class="title">Мы точно знаем, что делаем. </h2>
+            <a href="services.html" class="know__link">УСЛУГИ</a>
+        </div>
+
+        <div class="know__text">
+            <div class="know__agent">Наше агентство процветает в отрасли, характеризующейся постоянными изменениями ландшафта, на самом конкурентном рынке в мире.</div>
+
+            <div class="know__services">Комплекс услуг, которые мы готовы предоставить нашим клиентам на территории Китая, накопленный опыт, а также постоянная работа с различными административными органами, общественными организациями и крупным бизнесом позволяет нам оказывать результативные услуги продвижения бизнеса в Китае.</div>
+        </div>
+    </div>
+</section>
+    <section class="keys" id="keys">
+    <div class="container">
+        <div class="keys__wrapper">
+            <h2 class="title">кейсы</h2>
+            <a href="#" class="keys__all">все кейсы</a>
+        </div>
+        
+        <div class="keys__line"></div>
+
+        <div class="keys__swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide keys__swiper__flex">
+                    <div class="keys__block">
+                        <div class="keys__swiper__logo">
+                            <img src="img/keys/keys-logo.webp" alt="Логотип NovaKid">
+                        </div>
+                        <h2 class="keys__swiper__title">NovaKid 1</h2>
+                        <p class="keys__swiper__descr">NovaKidГлобальный сервис английского онлайн образования для детей от 4 до 12 лет. Компания хочет выйти на китайский рынок, и привлечь аудиторию молодых матерей, которые при регистрации на сайте получат первый урок бесплатно.Услуги: Онлайн маркетинг и акции в Китае.</p>
+                        <h3 class="keys__swiper__title-list">Проведенные работы:</h3>
+                        <ul class="keys__swiper__list">
+                            <li class="keys__swiper__item">Работа с WeChat и сайтами</li>
+                            <li class="keys__swiper__item">Разработка креативного контента</li>
+                            <li class="keys__swiper__item">Поисковая и баннерная реклама</li>
+                            <li class="keys__swiper__item">Реклама в социальных сетях</li>
+                            <li class="keys__swiper__item">Оффлайн и онлайн реклама</li>
+                        </ul>
+                    </div>
+
+                    <div class="keys__swiper__img">
+                        <img src="img/keys/keys-img.webp" alt="NovaKid">
+                    </div>
+                </div>
+
+                <div class="swiper-slide keys__swiper__flex">
+                    <div class="keys__block">
+                        <div class="keys__swiper__logo">
+                            <img src="img/keys/keys-logo.webp" alt="Логотип NovaKid">
+                        </div>
+                        <h2 class="keys__swiper__title">NovaKid 1</h2>
+                        <p class="keys__swiper__descr">NovaKidГлобальный сервис английского онлайн образования для детей от 4 до 12 лет. Компания хочет выйти на китайский рынок, и привлечь аудиторию молодых матерей, которые при регистрации на сайте получат первый урок бесплатно.Услуги: Онлайн маркетинг и акции в Китае.</p>
+                        <h3 class="keys__swiper__title-list">Проведенные работы:</h3>
+                        <ul class="keys__swiper__list">
+                            <li class="keys__swiper__item">Работа с WeChat и сайтами</li>
+                            <li class="keys__swiper__item">Разработка креативного контента</li>
+                            <li class="keys__swiper__item">Поисковая и баннерная реклама</li>
+                            <li class="keys__swiper__item">Реклама в социальных сетях</li>
+                            <li class="keys__swiper__item">Оффлайн и онлайн реклама</li>
+                        </ul>
+                    </div>
+
+                    <div class="keys__swiper__img">
+                        <img src="img/keys/keys-img.webp" alt="NovaKid">
+                    </div>
+                </div>
+
+                <div class="swiper-slide keys__swiper__flex">
+                    <div class="keys__block">
+                        <div class="keys__swiper__logo">
+                            <img src="img/keys/keys-logo.webp" alt="Логотип NovaKid">
+                        </div>
+                        <h2 class="keys__swiper__title">NovaKid 1</h2>
+                        <p class="keys__swiper__descr">NovaKidГлобальный сервис английского онлайн образования для детей от 4 до 12 лет. Компания хочет выйти на китайский рынок, и привлечь аудиторию молодых матерей, которые при регистрации на сайте получат первый урок бесплатно.Услуги: Онлайн маркетинг и акции в Китае.</p>
+                        <h3 class="keys__swiper__title-list">Проведенные работы:</h3>
+                        <ul class="keys__swiper__list">
+                            <li class="keys__swiper__item">Работа с WeChat и сайтами</li>
+                            <li class="keys__swiper__item">Разработка креативного контента</li>
+                            <li class="keys__swiper__item">Поисковая и баннерная реклама</li>
+                            <li class="keys__swiper__item">Реклама в социальных сетях</li>
+                            <li class="keys__swiper__item">Оффлайн и онлайн реклама</li>
+                        </ul>
+                    </div>
+
+                    <div class="keys__swiper__img">
+                        <img src="img/keys/keys-img.webp" alt="NovaKid">
+                    </div>
+                </div>
+
+                <div class="swiper-slide keys__swiper__flex">
+                    <div class="keys__block">
+                        <div class="keys__swiper__logo">
+                            <img src="img/keys/keys-logo.webp" alt="Логотип NovaKid">
+                        </div>
+                        <h2 class="keys__swiper__title">NovaKid 1</h2>
+                        <p class="keys__swiper__descr">NovaKidГлобальный сервис английского онлайн образования для детей от 4 до 12 лет. Компания хочет выйти на китайский рынок, и привлечь аудиторию молодых матерей, которые при регистрации на сайте получат первый урок бесплатно.Услуги: Онлайн маркетинг и акции в Китае.</p>
+                        <h3 class="keys__swiper__title-list">Проведенные работы:</h3>
+                        <ul class="keys__swiper__list">
+                            <li class="keys__swiper__item">Работа с WeChat и сайтами</li>
+                            <li class="keys__swiper__item">Разработка креативного контента</li>
+                            <li class="keys__swiper__item">Поисковая и баннерная реклама</li>
+                            <li class="keys__swiper__item">Реклама в социальных сетях</li>
+                            <li class="keys__swiper__item">Оффлайн и онлайн реклама</li>
+                        </ul>
+                    </div>
+
+                    <div class="keys__swiper__img">
+                        <img src="img/keys/keys-img.webp" alt="NovaKid">
+                    </div>
+                </div>
+
+                <div class="swiper-slide keys__swiper__flex">
+                    <div class="keys__block">
+                        <div class="keys__swiper__logo">
+                            <img src="img/keys/keys-logo.webp" alt="Логотип NovaKid">
+                        </div>
+                        <h2 class="keys__swiper__title">NovaKid 1</h2>
+                        <p class="keys__swiper__descr">NovaKidГлобальный сервис английского онлайн образования для детей от 4 до 12 лет. Компания хочет выйти на китайский рынок, и привлечь аудиторию молодых матерей, которые при регистрации на сайте получат первый урок бесплатно.Услуги: Онлайн маркетинг и акции в Китае.</p>
+                        <h3 class="keys__swiper__title-list">Проведенные работы:</h3>
+                        <ul class="keys__swiper__list">
+                            <li class="keys__swiper__item">Работа с WeChat и сайтами</li>
+                            <li class="keys__swiper__item">Разработка креативного контента</li>
+                            <li class="keys__swiper__item">Поисковая и баннерная реклама</li>
+                            <li class="keys__swiper__item">Реклама в социальных сетях</li>
+                            <li class="keys__swiper__item">Оффлайн и онлайн реклама</li>
+                        </ul>
+                    </div>
+
+                    <div class="keys__swiper__img">
+                        <img src="img/keys/keys-img.webp" alt="NovaKid">
+                    </div>
+                </div>
+            </div>
+            <div class="keys__swiper-pagination"></div>
+        
+            <div class="keys__swiper-button-prev">
+                <svg>
+                    <use xlink:href="img/sprite.svg#keys-arrow"></use>
+                </svg>
+            </div>
+
+            <div class="keys__swiper-button-next">
+                <svg>
+                    <use xlink:href="img/sprite.svg#keys-arrow"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="clients" id="client">
+    <div class="container">
+        <div class="clients__wrapper">
+            <div class="clients__text">
+                <h2 class="title mb-40">наши клиенты</h2>
+                <div class="clients__descr">Мы работаем с различными брендами и компаниям по всему миру, но цель всегда одна - достичь самых высоких результатов в Китае и с Китайской аудиторией..</div>
+            </div>
+
+            <div class="clients__img">
+                <img src="img/clients/clients-logo.webp" alt="Логотипы компаний">
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="query" id="query">
+    <div class="container">
+        <h2 class="query__title">ОТВЕТИМ НА ВСЕ ВАШИ ВОПРОСЫ</h2>
+        <form action="#" class="query__form">
+            <div class="query__wrapper">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="phone" placeholder="Ваше телефон">
+                <input type="text" name="email" placeholder="Ваше емейл">
+            </div>
+            <div class="query__area">
+                <textarea name="message" id="query-message" placeholder="Ваше ваш комментарий"></textarea>
+            </div>
+            <div class="query__buttons checkbox">
+                <div class="query__text">
+                    <input type="checkbox" id="query-form" class="custom-checkbox" checked>
+                    <label for="query-form" class="free__police">
+                        <a href="#"> <span>я согласен(а) с</span> политикой конфиденциальности</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn">отправить</button>
+            </div>
+        </form>
+    </div>
+</section>
+    <footer class="footer" id="contacts">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <div class="footer__img">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#footer-logo"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer__map">
+                    <a href="#">Карта сайта</a>
+                </div>
+
+                <div class="footer__police">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+
+                <div class="footer__danger">
+                    Пользуясь сайтом, вы даете согласие на  использование файлов cookies сервисов Яндекс и Google.
+                    Это необходимо для нормального  функционирования сайта и анализа трафика.
+                </div>
+
+                <div class="footer__company">
+                    EASY CHINA MARKETING, 2022 © CHIMONY
+                </div>
+            </div>
+
+            <div class="footer__menu">
+                <h2 class="footer__title">Меню:</h2>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#services">услуги</a></li>
+                    <li class="footer__item"><a href="#keys">кейсы</a></li>
+                    <li class="footer__item"><a href="#about">о нас</a></li>
+                    <li class="footer__item"><a href="#news">новости рынка китая</a></li>
+                    <li class="footer__item"><a href="#blog">блог</a></li>
+                    <li class="footer__item"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__block">
+                <div class="footer__contact">
+                    <h2 class="footer__title">Контакты:</h2>
+                    <div class="footer__tel"><a href="tel:88008888888">8 (800) 888-88-88</a></div>
+                    <div class="footer__email"><a href="mailto:CHIMONY@GMAIL.COM">CHIMONY@GMAIL.COM</a></div>
+                </div>
+
+                <div class="footer__social">
+                    <h2 class="footer__title">Соц сети:</h2>
+                    <div class="footer__social_wrapper">
+                        <div class="footer__social_icon">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#social-whatsapp"></use>
+                                </svg>
+                            </a>
+                        </div>
+        
+                        <div class="footer__social_icon">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#social-inst"></use>
+                                </svg>
+                            </a>
+                        </div>
+        
+                        <div class="footer__social_icon">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#social-message"></use>
+                                </svg>
+                            </a>
+                        </div>
+        
+                        <div class="footer__social_icon">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#social-telegram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="footer__adress">
+                    <h2 class="footer__title"> Адреса офисов:</h2>
+                    <div class="footer__container">
+                        <div class="footer__container_adress">
+                            Atta Commerce (Shanghai) Co., Ltd.
+                            Address: Loushanguan Road 35, 6F, 121
+                            Shanghai, 200051, P.R. of China
+                        </div>
+        
+                        <div class="footer__container_adress">
+                            Atta Oy <br>
+                            Lakkasuontie 1, <br>
+                            Espoo, 02860, Finland
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-mobile__company">EASY CHINA MARKETING, 2022 © CHIMONY</div>
+    </div>
+</footer>
+
+    <script src="js/libs/svg4everybody.min.js"></script>
+    <script>
+        svg4everybody();
+    </script>
+    <script src="js/libs/retina.min.js"></script>
+    <script src="js/libs/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/libs/attr.js"></script>
+</body>
+</html>

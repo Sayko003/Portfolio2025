@@ -1,0 +1,120 @@
+.acs-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    background: #0000009e;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    perspective: 500px;
+    perspective-origin: calc(50%) 50%;
+    overflow-x: auto;
+    pointer-events: none;
+}
+
+.acs-modal-on {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+}
+
+.acs-modal-dialog {
+    width: 550px;
+    background: #fff;
+    margin: 120px auto;
+    border-radius: 0;
+}
+
+.acs-modal-content {
+    position: relative;
+}
+
+//@at-root
+.close-acs-modal {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    svg {
+        display: block;
+        transition: transform 0.2s ease;
+    }
+}
+
+.close-acs-modal {
+    padding: 6px;
+
+    &:hover {
+        svg {
+            transform: scale(1.6);
+        }
+    }
+}
+
+.acs-modal-body {
+    padding: 69px 84px 90px 84px;
+}
+
+.acs-modal-title {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.acs-modal-subtitle {
+    color: $color2;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.acs-modal-form {
+}
+
+.acs-modal-formgroup {
+    &:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+}
+
+.acs-modal-label {
+    margin-bottom: 4px;
+}
+
+.acs-modal-input {
+    height: 50px;
+    padding: 0 20px;
+}
+
+.acs-modal-textarea {
+    height: 120px;
+    padding: 12px 20px;
+    resize: none;
+}
+
+.acs-modal-input,
+.acs-modal-textarea {
+    width: 100%;
+    border: 1px solid #d9d9de;
+    outline: none;
+}
+
+.acs-modal-submit {
+    background: $color4;
+    padding: 17px 23px 18px 41px;
+    outline: none;
+    width: 260px;
+    color: #fff;
+    transition: background 0.2s ease;
+
+    &:hover {
+        background: $color1;
+    }
+}
+@import "price";
+@import "media";

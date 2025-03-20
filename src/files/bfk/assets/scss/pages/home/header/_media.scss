@@ -1,0 +1,28 @@
+@media (min-width:1024px){
+    .header-top{
+        .fixed-w{
+            width: 100%;
+        }
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .header-hero-title {
+        font-size: 40px;
+        line-height: 100%;
+
+        padding-left: 15px;
+        padding-right: 0;
+        margin-right: 15px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 390px) {
+    .header-hero-btn {
+        margin: 0 15px;
+        display: block;
+        padding: 20px 20px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Chimony</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header__wrapper">
+        <div class="header__logo">
+            <a href="#">
+                <svg>
+                    <use xlink:href="img/sprite.svg#header-logo"></use>
+                </svg>
+            </a>
+        </div>
+
+        <div class="header__menu">
+            <ul class="header__list">
+                <li class="header__item"><a href="#services">услуги</a></li>
+                <li class="header__item"><a href="#keys">кейсы</a></li>
+                <li class="header__item"><a href="#about">о нас</a></li>
+                <li class="header__item"><a href="#news">новости рынка китая</a></li>
+                <li class="header__item"><a href="#blog">блог</a></li>
+                <li class="header__item"><a href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="header__search">
+            <form action="#">
+                <input type="text" placeholder="Поиск">
+                <button type="submit">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#header-search"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="header__contacts">
+            <div class="header__phone">
+                <a href="tel:88008888888">8 (800) 888-88-88</a>
+            </div>
+
+            <a class="btn btn-p btn-w160 modal__link " data-title ="Заголовок работает" data-input-name = "Hidden-name" data-input-id="Id-Hidden" data-value = "Lalala">
+                бесплатная консультация
+            </a>
+        </div>
+        
+
+        <div class="header__mobile_phone">
+            <a href="tel:88888888">
+                <svg>
+                    <use xlink:href="img/sprite.svg#header-phone"></use>
+                </svg>
+            </a>
+        </div>
+        <form action="#" class="header__mobile">
+            <div class="header__mobile_input">
+                <input type="text" class="input" placeholder="Поиск">
+                <button class="mobile-search" type="submit">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#header-search"></use>
+                    </svg>
+                </button>
+            </div>
+            
+            <div class="header__mobile_search">
+                <svg>
+                    <use xlink:href="img/sprite.svg#header-search"></use>
+                </svg>
+            </div>
+            
+        </form>
+
+        <div class="header__mobile_burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+    <div class="modal">
+    <div class="modal__wrapper">
+        <div class="menu__scroll">
+            <div class="menu__scrollY">
+                <div class="modal__block">
+                    <div class="modal__text">
+                        <h2 class="modal__title">Бесплатная консультация</h2>
+                        <div class="modal__close">
+                            <svg>
+                                <use xlink:href="img/sprite.svg#modal-close"></use>
+                            </svg>
+                        </div>
+                    </div>
+        
+                    <div class="modal-form">
+                        <form action="#" class="modal__form">
+                            <div class="modal__form__wrapper">
+                                <label for="modal-name">Имя:</label>
+                                <input id="modal-name" type="text" name="name" placeholder="Ваше имя">
+                                <label for="modal-tel">Телефон:</label>
+                                <input id="modal-tel" type="text" name="phone" placeholder="Ваше телефон">
+                                <label for="modal-email">Email:</label>
+                                <input id="modal-email" type="text" name="email" placeholder="Ваше емейл">
+                            </div>
+                            <div class="modal__buttons checkbox">
+                                <div class="modal__form__text">
+                                    <input type="checkbox" id="modal" class="custom-checkbox" checked>
+                                    <label for="modal" class="modal__police">я согласен(а) с <a href="#"> политикой конфиденциальности</a></label>
+                                </div>
+                                <button type="submit" class="modal__btn">отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        
+    </div>
+</div>
+    <div class="menu">
+    <div class="container">
+        <div class="menu__scroll">
+            <div class="menu__scrollY">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="#services">услуги</a></li>
+                    <li class="menu__item"><a href="#keys">кейсы</a></li>
+                    <li class="menu__item"><a href="#abot">о нас</a></li>
+                    <li class="menu__item"><a href="#news">новости рынка китая</a></li>
+                    <li class="menu__item"><a href="#blog">блог</a></li>
+                    <li class="menu__item"><a href="#contacts">Контакты</a></li>
+                </ul>
+        
+                <div class="menu__contacts">
+                    <div class="menu__wrapper">
+                        <h2 class="menu__title">Контакты:</h2>
+                        <div class="menu__tel"> <a href="tel:88008888888">8 (800) 888-88-88</a></div>
+                        <div class="menu__email"> <a href="mailto:CHIMONY@GMAIL.COM">CHIMONY@GMAIL.COM</a></div>
+                    </div>
+        
+                    <div class="menu__social">
+                        <h2 class="menu__title">Соц сети:</h2>
+                        <div class="menu__social_wrapper">
+                            <div class="menu__social_icon">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#social-whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </div>
+            
+                            <div class="menu__social_icon">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#social-inst"></use>
+                                    </svg>
+                                </a>
+                            </div>
+            
+                            <div class="menu__social_icon">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#social-message"></use>
+                                    </svg>
+                                </a>
+                            </div>
+            
+                            <div class="menu__social_icon">
+                                <a href="#">
+                                    <svg>
+                                        <use xlink:href="img/sprite.svg#social-telegram"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+        
+                <div class="menu__adress">
+                    <h2 class="menu__title"> Адреса офисов:</h2>
+                    <div class="menu__block">
+                        <div class="menu__block_adress">
+                            Atta Commerce (Shanghai) Co., Ltd.
+                            Address: Loushanguan Road 35, 6F, 121
+                            Shanghai, 200051, P.R. of China
+                        </div>
+        
+                        <div class="menu__block_adress">
+                            Atta Oy <br>
+                            Lakkasuontie 1, <br>
+                            Espoo, 02860, Finland
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <section class="main" id="main">
+    <div class="container">
+        <div class="main__wrapper">
+            <h1 class="main-title mb-24">Освещаем  путь маркетинга при входе на Китайский рынок</h1>
+            <div class="main__subtitle">Маркетинговое агентство в Китае</div>
+            <a class="btn modal__link" href="#" data-title ="Она точно бесплатная?" data-input-name = "Пример, который просили" data-input-id="twoModal" data-value = "Модульное окно" data-img="https://sun1-88.userapi.com/s/v1/ig2/iS7G1ybgqunwuR_qhjCBnvJVLjPChzcFovipar-1horq7v4z7b23aefEnglIZ3hlhBssNUYvViblMwooWCRbnUGT.jpg?size=50x0&quality=96&crop=10,0,600,600&ava=1"  data-alt-img="Собачка" data-text="Пример с полными атрибутами">связатся</a>
+        </div>
+
+        <div class="main__block">
+            <div class="main__card">
+                <div class="main__number">15+</div>
+                <div class="main__descr">млн.$ годовой прибыли клиентов</div>
+            </div>
+
+            <div class="main__card">
+                <div class="main__number">10 000+</div>
+                <div class="main__descr">миллионов охваченных пользователей</div>
+            </div>
+
+            <div class="main__card">
+                <div class="main__number">17+</div>
+                <div class="main__descr">отраслей бизнеса </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="completics" id="completics">
+    <div class="container">
+        <h2 class="title mb-60">Комплексные решения </h2>
+        <div class="completics__wrapper">
+            <div class="completics__card">
+                <div class="completics__block">
+                    <h3 class="completics__card__title">Построение воронки продаж в Китае.</h3>
+                    <div class="completics__card__descr">Уменьшение стоимости конверсии (CAC). Увеличение Пожизненной Ценность Клиентов (CLV).</div>
+                    <a href="#" class="completics__card__link modal__link" data-title ="Бесплатная презентация 1" data-text="lalala">Бесплатная консультация</a>
+                </div>
+                
+            </div>
+
+            <div class="completics__card">
+                <div class="completics__block">
+                    <h3 class="completics__card__title">Прибыльность и увеличение товарооборота на Китайском рынке. </h3>
+                    <div class="completics__card__descr">Уменьшение стоимости конверсии (CAC). Увеличение Пожизненной Ценность Клиентов (CLV).</div>
+                    <a href="#" class="completics__card__link modal__link" data-title ="Бесплатная презентация 2">Бесплатная консультация</a>
+                </div>
+            </div>
+
+            <div class="completics__card">
+                <div class="completics__block">
+                    <h3 class="completics__card__title">Разработка стратегии входа на китайский рынок вашего бренда.</h3>
+                    <div class="completics__card__descr">Исследование рынка, его объема и потенциал. Анализ конкурентов. Изучение целевой аудитории. Постановка целей по окупаемости, продажам и прибыли.</div>
+                    <a href="#" class="completics__card__link modal__link" data-title ="Бесплатная презентация 3">Бесплатная консультация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="services" id="services">
+    <div class="container">
+        <div class="services__text">
+            <h2 class="title w-color">услуги</h2>
+            <p class="services__descr">Помогаем зарубежному бизнесу выйти на китайский рынок дистанционно, с небольшими финансовыми затратами за 3-4 месяца.</p>
+        </div>
+
+        <div class="services__block">
+
+            <!-- 1 -->
+            <div class="services__item">
+                <div class="services__left">
+                    <div class="services__img">
+                        <img src="img/services/service-1.webp" alt="Baidu">
+                    </div>
+                    <h3 class="services__company">Продвижение в Baidu</h3>
+                </div>
+
+                <div class="services__rigth">
+                    <div class="services__links">
+                        <a href="#">Контекстно-медийная  реклама и продвижение в Baidu</a>
+                        <a href="#">SEO продвижение в Baidu</a>
+
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">Аналитика в Baidu</a>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+            <!-- 2 -->
+            <div class="services__item">
+                <div class="services__left">
+                    <div class="services__img">
+                        <img src="img/services/service-2.webp" alt="Социальные сети">
+                    </div>
+                    <h3 class="services__company">Продвижение в социальных сетях</h3>
+                </div>
+
+                <div class="services__rigth">
+                    <div class="services__links">
+                        <a href="#">Таргетированная реклама</a>
+                        <a href="web-service.html">Продвижение в WeChat</a>
+
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">WeiBo</a>
+                        <a href="#">DouYin – Tiktok</a>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+            <!-- 3 -->
+            <div class="services__item">
+                <div class="services__left">
+                    <div class="services__img">
+                        <img src="img/services/service-3.webp" alt="Развитие продаж">
+                    </div>
+                    <h3 class="services__company">Развитие продаж</h3>
+                </div>
+
+                <div class="services__rigth">
+                    <div class="services__links">
+                        <a href="#">E-commerce</a>
+                        <a href="#">Лидогенерация</a>
+
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">B2B продажи</a>
+                        <a href="#">B2B продажи</a>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+            <!-- 4 -->
+            <div class="services__item">
+                <div class="services__left">
+                    <div class="services__img">
+                        <img src="img/services/service-4.webp" alt="Web-development">
+                    </div>
+                    <h3 class="services__company">Web-development</h3>
+                </div>
+
+                <div class="services__rigth">
+                    <div class="services__links">
+                        <a href="#">Создание сайтов</a>
+                        <a href="#">Мобильные приложения</a>
+
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">Лицензия</a>
+                        <a href="#">Хостинг в Китае</a>
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">Регистрация домена в Китае</a>
+                        <a href="#">Подключение платежной системы</a>
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">Поисково-информ сервисы</a>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <!-- 5 -->
+            <div class="services__item">
+                <div class="services__left">
+                    <div class="services__img">
+                        <img src="img/services/service-5.webp" alt="PR">
+                    </div>
+                    <h3 class="services__company">PR</h3>
+                </div>
+
+                <div class="services__rigth">
+                    <div class="services__links">
+                        <a href="#">Инфлюенсеры и KOL-маркетинг (блогеры)</a>
+                        <a href="#">Медийная реклама</a>
+
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">Оффлайн-продвижение</a>
+                        <a href="#">Поиск амбассадоров бренда</a>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <!-- 6 -->
+            <div class="services__item">
+                <div class="services__left">
+                    <div class="services__img">
+                        <img src="img/services/service-6.webp" alt="Контент-маркетинг">
+                    </div>
+                    <h3 class="services__company">Контент-маркетинг</h3>
+                </div>
+
+                <div class="services__rigth">
+                    <div class="services__links">
+                        <a href="#">Контент для соц. сетей</a>
+                        <a href="#">Контент для сайта</a>
+
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">Видео контент</a>
+                        <a href="#">Дизайн</a>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <!-- 7 -->
+            <div class="services__item">
+                <div class="services__left">
+                    <div class="services__img">
+                        <img src="img/services/service-7.webp" alt="Брендинг">
+                    </div>
+                    <h3 class="services__company">Брендинг</h3>
+                </div>
+
+                <div class="services__rigth">
+                    <div class="services__links">
+                        <a href="#">Локализация бренда </a>
+                        <a href="#">Увеличение узнаваемости</a>
+
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">Дифференциация от конкурентов</a>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <!-- 8 -->
+            <div class="services__item">
+                <div class="services__left">
+                    <div class="services__img">
+                        <img src="img/services/service-8.webp" alt="Разработка стратегии">
+                    </div>
+                    <h3 class="services__company">Разработка стратегии</h3>
+                </div>
+
+                <div class="services__rigth">
+                    <div class="services__links">
+                        <a href="#">Исследования рынка </a>
+                        <a href="#">Анализ конкурентов</a>
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">Разработка маркетинговой стратегии</a>
+                        <a href="#">Медиа-план</a>
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">Сегментация и позиционирование</a>
+                        <a href="#">Бренд-стратегия</a>
+                    </div>
+
+                    
+                </div>
+                
+
+            </div>
+
+            <!-- 9 -->
+            <div class="services__item">
+                <div class="services__left">
+                    <div class="services__img">
+                        <img src="img/services/service-9.webp" alt="Туризм">
+                    </div>
+                    <h3 class="services__company">Туризм</h3>
+                </div>
+
+                <div class="services__rigth">
+                    <div class="services__links">
+                        <a href="#">Привлечение туристов из Китая </a>
+                        <a href="#">Привлечение китайцев, проживающих вне Китая</a>
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">Медиа-план </a>
+                        <a href="#">Формирование оферта</a>
+                    </div>
+
+                    <div class="services__links">
+                        <a href="#">Сегментация и позиционирование</a>
+                        <a href="#">Стратегия для туризм маркетинга</a>
+                    </div>
+
+                    
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="free" id="free">
+    <div class="container">
+        <h2 class="title mb-60">Заказать бесплатную консультацию</h2>
+        <form action="#" class="free__form">
+            <div class="free__wrapper">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="phone" placeholder="Ваше телефон">
+                <input type="text" name="email" placeholder="Ваше емейл">
+            </div>
+            <div class="free__buttons checkbox">
+                <div class="free__text">
+                    <input type="checkbox" id="free-form" class="custom-checkbox" checked>
+                    <label for="free-form" class="free__police">
+                            <a href="#"> <span>я согласен(а) с</span> политикой конфиденциальности</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn">отправить</button>
+            </div>
+        </form>
+    </div>
+</section>
+    <section class="keys" id="keys">
+    <div class="container">
+        <div class="keys__wrapper">
+            <h2 class="title">кейсы</h2>
+            <a href="#" class="keys__all">все кейсы</a>
+        </div>
+        
+        <div class="keys__line"></div>
+
+        <div class="keys__swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide keys__swiper__flex">
+                    <div class="keys__block">
+                        <div class="keys__swiper__logo">
+                            <img src="img/keys/keys-logo.webp" alt="Логотип NovaKid">
+                        </div>
+                        <h2 class="keys__swiper__title">NovaKid 1</h2>
+                        <p class="keys__swiper__descr">NovaKidГлобальный сервис английского онлайн образования для детей от 4 до 12 лет. Компания хочет выйти на китайский рынок, и привлечь аудиторию молодых матерей, которые при регистрации на сайте получат первый урок бесплатно.Услуги: Онлайн маркетинг и акции в Китае.</p>
+                        <h3 class="keys__swiper__title-list">Проведенные работы:</h3>
+                        <ul class="keys__swiper__list">
+                            <li class="keys__swiper__item">Работа с WeChat и сайтами</li>
+                            <li class="keys__swiper__item">Разработка креативного контента</li>
+                            <li class="keys__swiper__item">Поисковая и баннерная реклама</li>
+                            <li class="keys__swiper__item">Реклама в социальных сетях</li>
+                            <li class="keys__swiper__item">Оффлайн и онлайн реклама</li>
+                        </ul>
+                    </div>
+
+                    <div class="keys__swiper__img">
+                        <img src="img/keys/keys-img.webp" alt="NovaKid">
+                    </div>
+                </div>
+
+                <div class="swiper-slide keys__swiper__flex">
+                    <div class="keys__block">
+                        <div class="keys__swiper__logo">
+                            <img src="img/keys/keys-logo.webp" alt="Логотип NovaKid">
+                        </div>
+                        <h2 class="keys__swiper__title">NovaKid 1</h2>
+                        <p class="keys__swiper__descr">NovaKidГлобальный сервис английского онлайн образования для детей от 4 до 12 лет. Компания хочет выйти на китайский рынок, и привлечь аудиторию молодых матерей, которые при регистрации на сайте получат первый урок бесплатно.Услуги: Онлайн маркетинг и акции в Китае.</p>
+                        <h3 class="keys__swiper__title-list">Проведенные работы:</h3>
+                        <ul class="keys__swiper__list">
+                            <li class="keys__swiper__item">Работа с WeChat и сайтами</li>
+                            <li class="keys__swiper__item">Разработка креативного контента</li>
+                            <li class="keys__swiper__item">Поисковая и баннерная реклама</li>
+                            <li class="keys__swiper__item">Реклама в социальных сетях</li>
+                            <li class="keys__swiper__item">Оффлайн и онлайн реклама</li>
+                        </ul>
+                    </div>
+
+                    <div class="keys__swiper__img">
+                        <img src="img/keys/keys-img.webp" alt="NovaKid">
+                    </div>
+                </div>
+
+                <div class="swiper-slide keys__swiper__flex">
+                    <div class="keys__block">
+                        <div class="keys__swiper__logo">
+                            <img src="img/keys/keys-logo.webp" alt="Логотип NovaKid">
+                        </div>
+                        <h2 class="keys__swiper__title">NovaKid 1</h2>
+                        <p class="keys__swiper__descr">NovaKidГлобальный сервис английского онлайн образования для детей от 4 до 12 лет. Компания хочет выйти на китайский рынок, и привлечь аудиторию молодых матерей, которые при регистрации на сайте получат первый урок бесплатно.Услуги: Онлайн маркетинг и акции в Китае.</p>
+                        <h3 class="keys__swiper__title-list">Проведенные работы:</h3>
+                        <ul class="keys__swiper__list">
+                            <li class="keys__swiper__item">Работа с WeChat и сайтами</li>
+                            <li class="keys__swiper__item">Разработка креативного контента</li>
+                            <li class="keys__swiper__item">Поисковая и баннерная реклама</li>
+                            <li class="keys__swiper__item">Реклама в социальных сетях</li>
+                            <li class="keys__swiper__item">Оффлайн и онлайн реклама</li>
+                        </ul>
+                    </div>
+
+                    <div class="keys__swiper__img">
+                        <img src="img/keys/keys-img.webp" alt="NovaKid">
+                    </div>
+                </div>
+
+                <div class="swiper-slide keys__swiper__flex">
+                    <div class="keys__block">
+                        <div class="keys__swiper__logo">
+                            <img src="img/keys/keys-logo.webp" alt="Логотип NovaKid">
+                        </div>
+                        <h2 class="keys__swiper__title">NovaKid 1</h2>
+                        <p class="keys__swiper__descr">NovaKidГлобальный сервис английского онлайн образования для детей от 4 до 12 лет. Компания хочет выйти на китайский рынок, и привлечь аудиторию молодых матерей, которые при регистрации на сайте получат первый урок бесплатно.Услуги: Онлайн маркетинг и акции в Китае.</p>
+                        <h3 class="keys__swiper__title-list">Проведенные работы:</h3>
+                        <ul class="keys__swiper__list">
+                            <li class="keys__swiper__item">Работа с WeChat и сайтами</li>
+                            <li class="keys__swiper__item">Разработка креативного контента</li>
+                            <li class="keys__swiper__item">Поисковая и баннерная реклама</li>
+                            <li class="keys__swiper__item">Реклама в социальных сетях</li>
+                            <li class="keys__swiper__item">Оффлайн и онлайн реклама</li>
+                        </ul>
+                    </div>
+
+                    <div class="keys__swiper__img">
+                        <img src="img/keys/keys-img.webp" alt="NovaKid">
+                    </div>
+                </div>
+
+                <div class="swiper-slide keys__swiper__flex">
+                    <div class="keys__block">
+                        <div class="keys__swiper__logo">
+                            <img src="img/keys/keys-logo.webp" alt="Логотип NovaKid">
+                        </div>
+                        <h2 class="keys__swiper__title">NovaKid 1</h2>
+                        <p class="keys__swiper__descr">NovaKidГлобальный сервис английского онлайн образования для детей от 4 до 12 лет. Компания хочет выйти на китайский рынок, и привлечь аудиторию молодых матерей, которые при регистрации на сайте получат первый урок бесплатно.Услуги: Онлайн маркетинг и акции в Китае.</p>
+                        <h3 class="keys__swiper__title-list">Проведенные работы:</h3>
+                        <ul class="keys__swiper__list">
+                            <li class="keys__swiper__item">Работа с WeChat и сайтами</li>
+                            <li class="keys__swiper__item">Разработка креативного контента</li>
+                            <li class="keys__swiper__item">Поисковая и баннерная реклама</li>
+                            <li class="keys__swiper__item">Реклама в социальных сетях</li>
+                            <li class="keys__swiper__item">Оффлайн и онлайн реклама</li>
+                        </ul>
+                    </div>
+
+                    <div class="keys__swiper__img">
+                        <img src="img/keys/keys-img.webp" alt="NovaKid">
+                    </div>
+                </div>
+            </div>
+            <div class="keys__swiper-pagination"></div>
+        
+            <div class="keys__swiper-button-prev">
+                <svg>
+                    <use xlink:href="img/sprite.svg#keys-arrow"></use>
+                </svg>
+            </div>
+
+            <div class="keys__swiper-button-next">
+                <svg>
+                    <use xlink:href="img/sprite.svg#keys-arrow"></use>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="clients" id="client">
+    <div class="container">
+        <div class="clients__wrapper">
+            <div class="clients__text">
+                <h2 class="title mb-40">наши клиенты</h2>
+                <div class="clients__descr">Мы работаем с различными брендами и компаниям по всему миру, но цель всегда одна - достичь самых высоких результатов в Китае и с Китайской аудиторией..</div>
+            </div>
+
+            <div class="clients__img">
+                <img src="img/clients/clients-logo.webp" alt="Логотипы компаний">
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="about" id="about">
+    <div class="container">
+        <h2 class="title mb-60 w-color">о нас</h2>
+        <div class="about__wrapper">
+            <div class="about__text">
+                <p class="about__descr">Сегодня мы предоставляем услуги комплексного маркетинга, где ключевым элементом является создание кастомной системы сквозной аналитики, позволяющей выстраивать каналы продвижения в эффективную воронку продаж. Наше агентство предлагает полный комплекс услуг, ориентированных на производительность и результат, для ведения бизнеса и увеличения продаж на рынке Китая.</p>
+                <a href="about.html" class="about__link">подробно</a>
+            </div>
+            
+            <div class="about__img">
+                <img src="img/about/about-chimun.webp" alt="Chimun">
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+    <section class="news" id="news">
+    <div class="container">
+        <div class="news__wrapper">
+            <div class="news__text">
+                <h2 class="title mb-36">новости рынка китая</h2>
+                <div class="news__subtitle">Для современного мира современная методологприносит нес</div>
+                <a href="#" class="news__allnews">все новости</a>
+            </div>
+    
+            <div class="news__swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="news__swiper__text">
+                            <h3 class="news__swiper__title">Заголовок статьи 1</h3>
+                            <div class="news__swiper__subtitle">Для современного мира современная методология разработки требует определения и уточнения как самодостаточных, так </div>
+                            <a href="news.html" class="news__swiper__link">СМОТРЕТЬ ПОДРОБНО</a>
+                        </div>
+
+                        <div class="news__swiper__img">
+                            <img src="img/news/news-img.webp" alt="Новость из Китая">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="news__swiper__text">
+                            <h3 class="news__swiper__title">Заголовок статьи 2</h3>
+                            <div class="news__swiper__subtitle">Для современного мира современная методология разработки требует определения и уточнения как самодостаточных, так</div>
+                            <a href="news.html" class="news__swiper__link">СМОТРЕТЬ ПОДРОБНО</a>
+                        </div>
+
+                        <div class="news__swiper__img">
+                            <img src="img/news/news-img.webp" alt="Новость из Китая">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="news__swiper__text">
+                            <h3 class="news__swiper__title">Заголовок статьи 3</h3>
+                            <div class="news__swiper__subtitle">Для современного мира современная методология разработки требует определения и уточнения как самодостаточных, так</div>
+                            <a href="news.html" class="news__swiper__link">СМОТРЕТЬ ПОДРОБНО</a>
+                        </div>
+
+                        <div class="news__swiper__img">
+                            <img src="img/news/news-img.webp" alt="Новость из Китая">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="news__swiper__text">
+                            <h3 class="news__swiper__title">Заголовок статьи 4</h3>
+                            <div class="news__swiper__subtitle">Для современного мира современная методология разработки требует определения и уточнения как самодостаточных, так</div>
+                            <a href="news.html" class="news__swiper__link">СМОТРЕТЬ ПОДРОБНО</a>
+                        </div>
+
+                        <div class="news__swiper__img">
+                            <img src="img/news/news-img.webp" alt="Новость из Китая">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="news__swiper__text">
+                            <h3 class="news__swiper__title">Заголовок статьи 5</h3>
+                            <div class="news__swiper__subtitle">Для современного мира современная методология разработки требует определения и уточнения как самодостаточных, так</div>
+                            <a href="news.html" class="news__swiper__link">СМОТРЕТЬ ПОДРОБНО</a>
+                        </div>
+
+                        <div class="news__swiper__img">
+                            <img src="img/news/news-img.webp" alt="Новость из Китая">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="news__swiper-pagination"></div>
+            
+    
+                <div class="news__swiper-button-prev">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#keys-arrow"></use>
+                    </svg>
+                </div>
+    
+                <div class="news__swiper-button-next">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#keys-arrow"></use>
+                    </svg>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</section>
+    <section class="project" id="project">
+    <div class="container">
+        <h2 class="title mb-60">Расскажите о вашем проекте</h2>
+        <form action="#" class="project__form">
+            <div class="project__wrapper">
+                <input type="text" name="name" placeholder="Ваше имя">
+                <input type="text" name="phone" placeholder="Ваше телефон">
+                <input type="text" name="email" placeholder="Ваше емейл">
+            </div>
+            <div class="project__area">
+                <textarea name="message" id="message" placeholder="Ваше ваш комментарий"></textarea>
+            </div>
+            <div class="project__buttons checkbox">
+                <div class="project__text">
+                    <input type="checkbox" id="project-form" class="custom-checkbox" checked>
+                    <label for="project-form" class="free__police">
+                        <a href="#"> <span>я согласен(а) с</span> политикой конфиденциальности</a>
+                    </label>
+                </div>
+                <button type="submit" class="project__btn">отправить</button>
+            </div>
+        </form>
+    </div>
+</section>
+    <footer class="footer" id="contacts">
+    <div class="container">
+        <div class="footer__wrapper">
+            <div class="footer__logo">
+                <div class="footer__img">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#footer-logo"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="footer__map">
+                    <a href="#">Карта сайта</a>
+                </div>
+
+                <div class="footer__police">
+                    <a href="#">Политика конфиденциальности</a>
+                </div>
+
+                <div class="footer__danger">
+                    Пользуясь сайтом, вы даете согласие на  использование файлов cookies сервисов Яндекс и Google.
+                    Это необходимо для нормального  функционирования сайта и анализа трафика.
+                </div>
+
+                <div class="footer__company">
+                    EASY CHINA MARKETING, 2022 © CHIMONY
+                </div>
+            </div>
+
+            <div class="footer__menu">
+                <h2 class="footer__title">Меню:</h2>
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="#services">услуги</a></li>
+                    <li class="footer__item"><a href="#keys">кейсы</a></li>
+                    <li class="footer__item"><a href="#about">о нас</a></li>
+                    <li class="footer__item"><a href="#news">новости рынка китая</a></li>
+                    <li class="footer__item"><a href="#blog">блог</a></li>
+                    <li class="footer__item"><a href="#contacts">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__block">
+                <div class="footer__contact">
+                    <h2 class="footer__title">Контакты:</h2>
+                    <div class="footer__tel"><a href="tel:88008888888">8 (800) 888-88-88</a></div>
+                    <div class="footer__email"><a href="mailto:CHIMONY@GMAIL.COM">CHIMONY@GMAIL.COM</a></div>
+                </div>
+
+                <div class="footer__social">
+                    <h2 class="footer__title">Соц сети:</h2>
+                    <div class="footer__social_wrapper">
+                        <div class="footer__social_icon">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#social-whatsapp"></use>
+                                </svg>
+                            </a>
+                        </div>
+        
+                        <div class="footer__social_icon">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#social-inst"></use>
+                                </svg>
+                            </a>
+                        </div>
+        
+                        <div class="footer__social_icon">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#social-message"></use>
+                                </svg>
+                            </a>
+                        </div>
+        
+                        <div class="footer__social_icon">
+                            <a href="#">
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#social-telegram"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="footer__adress">
+                    <h2 class="footer__title"> Адреса офисов:</h2>
+                    <div class="footer__container">
+                        <div class="footer__container_adress">
+                            Atta Commerce (Shanghai) Co., Ltd.
+                            Address: Loushanguan Road 35, 6F, 121
+                            Shanghai, 200051, P.R. of China
+                        </div>
+        
+                        <div class="footer__container_adress">
+                            Atta Oy <br>
+                            Lakkasuontie 1, <br>
+                            Espoo, 02860, Finland
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-mobile__company">EASY CHINA MARKETING, 2022 © CHIMONY</div>
+    </div>
+</footer>
+    <script src="js/libs/svg4everybody.min.js"></script>
+    <script>
+        svg4everybody();
+    </script>
+    <script src="js/libs/retina.min.js"></script>
+    <script src="js/libs/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/libs/attr.js"></script>
+</body>
+</html>

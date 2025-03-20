@@ -1,0 +1,286 @@
+.footer{
+    background-color: $color4;
+    padding: 100px 0 70px 0;
+    display: block;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: $color2;
+    &__title{
+        font-weight: 500;
+        font-size: 18px;
+        color: $color10;
+        margin-bottom: 20px;
+    }
+    &__descr{
+        margin-bottom: 56px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        &_img{
+            margin-bottom: 29px;
+            img{
+                max-width: 162px;
+                max-height: 26px;
+
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    &__adress{
+        &_text{
+            &:nth-child(n+1){
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__work{
+        &_time{
+            &:nth-child(n+1){
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__wrapper{
+        display: flex;
+    }
+    &__selected{
+        margin-bottom: 55px;
+        &__company{
+            display: flex;
+            justify-content: space-between;
+            svg{
+                margin-left: 32px;
+            }
+            &_company{
+                height: 23px;
+                margin-right: 99px;
+                max-width: 290px;
+            }
+            &_catalog{
+                margin-right: 193px;
+            }
+        }
+        &__price{
+            display: flex;
+            justify-content: space-between;
+            .subtitle-footer{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 120%;
+                /* identical to box height, or 17px */
+
+                color: $color2;
+            }
+            &_buyer{
+                margin-right: 59px;
+                svg{
+                    margin-left: 20px;
+                }
+                
+            }
+            &_service{
+                margin-right: 76px;
+            }
+           
+        }
+    }
+
+    .wrapper-submenu{
+        width: 100%;
+        position: relative;
+        .subtitle-footer {
+            position: relative;
+            width: 100%;
+            color: $color2;
+            text-decoration: none;
+            border-bottom: 1px solid $color2;
+            padding-bottom: 5px;
+            transition: .5s linear;
+            display: flex;
+            &:hover{
+                background-color: #C7CBD8;
+                color:#000;
+                svg{
+                    path{
+                        fill: #000;
+                    }
+                }
+            }
+        }
+        ul {
+            background: #F5F5F7;
+            padding: 5px 2px 5px 5px;
+            position: absolute;
+            top: 20px;
+            z-index: 10;
+        }
+        ul a {
+            position: relative;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            text-decoration: none;
+            color: #000000;
+            transition: all 0.3s;
+            display: block;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            
+            &:hover{
+                color: $color1;
+            }
+        }
+        .submenu {
+            width: 100%;
+            display: none;
+            background: #F5F5F7;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        &:hover .submenu {
+            display: block;
+        }
+        &:hover .subtitle-footer{
+            background-color: #C7CBD8;
+            color:#000;
+            svg{
+                path{
+                    fill: #000;
+                }
+            }
+        }
+    }
+
+    &__contact{
+        margin-bottom: 80px;
+
+        min-height: 110px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        border-top: 1px solid $color2;
+        border-bottom: 1px solid $color2;
+        &__email{
+            position: relative;
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 40px;
+            &:before{
+                content: '';
+                position: absolute;
+                top:-116%;
+                right: 0;
+                width: 1px;
+                height: 110px;
+                background-color: $color2;
+            }
+            &_text{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                color: rgba(255, 255, 255, 0.7);
+            }
+            &_mail{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 33px;
+
+                
+            }
+            &_link{
+                color: #FFFFFF;
+                text-decoration: none;
+                transition: all 0.3s;
+                &:hover{
+                    color: $color1;
+                }
+            }
+        }
+
+        &__phone{
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 40px;
+            &_text{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                color: rgba(255, 255, 255, 0.7);
+            }
+            &_tel{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 28px;
+                line-height: 33px;    
+            }
+            &_link{
+                color: #FFFFFF;
+                text-decoration: none;
+                transition: all 0.3s;
+                &:hover{
+                    color: $color1;
+                }
+            }
+        }
+    }
+
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_list{
+            display: flex;
+            align-items: center;
+        }
+        &_item{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 21px;
+            text-decoration: none;
+            color: $color10;
+            transition: all 0.3s;
+            display: block;
+            margin-right: 30px;
+            &:hover{
+                color: $color1;
+            }
+        }
+        &__polyce{
+            &_link{
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 120%;
+                text-align: right;
+                text-decoration: none;
+                color: $color2;
+                transition: all 0.3s;
+                &:hover{
+                    color: $color1;
+                }
+            }
+        }
+    }
+    
+}
+
+
+@import "media";

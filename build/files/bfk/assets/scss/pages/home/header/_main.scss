@@ -1,0 +1,87 @@
+.header-hero {
+}
+
+.header-hero-container {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    //padding: 0 70px;
+}
+
+.header-hero-body {
+    width: 100%;
+    min-height: 512px;
+    background: url(../img/hero.jpg) left 50% top 50% / cover no-repeat;
+}
+
+.header-hero-title {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120%;
+    color: $color5;
+
+    padding-left: 48px;
+    padding-right: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: inline-block;
+    margin-top: 120px;
+    margin-bottom: 33px;
+
+    background: linear-gradient(250.01deg, rgba(9, 108, 248, 0.94) 0%, rgba(0, 74, 179, 0.94) 97.35%);
+}
+
+.header-hero-triggers {
+    margin-bottom: 48px;
+}
+
+.header-hero-triggers__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    color: $color5;
+
+    padding-left: 50px;
+
+    position: relative;
+
+    &:not(:last-of-type) {
+        margin-bottom: 20px;
+    }
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 2px;
+        background: linear-gradient(250.01deg, rgba(9, 108, 248, 0.94) 0%, rgba(0, 74, 179, 0.94) 97.35%);
+
+        left: 0;
+        top: 10px;
+    }
+}
+
+.header-hero-btn {
+    margin-left: 50px;
+
+    padding: 20px 40px;
+
+    background: $color1;
+    color: $color5;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    text-decoration: none;
+    transition: background 0.2s ease-in-out;
+
+    &:hover {
+        background: $color4;
+    }
+}
+
+@import "media";
