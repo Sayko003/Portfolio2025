@@ -47,17 +47,19 @@ function btnNav(){
         } else {
             overflow.style.paddingRight = `${widthScroll}px`;
             overflow.style.overflow = `hidden`;
-            btnHeader.style.right = `45px`;
+            btnHeader.style.right = `${30 + widthScroll}px`;
         }
     }
 
+    function toggleClass(){
+        overflow.classList.toggle(`no-scroll`);
+        menu.classList.toggle(`menu-active`);
+    }
     function clickBtn(btn){
         btn.addEventListener(`click`, () =>{
         
-        paddingBody();
-        overflow.classList.toggle(`no-scroll`);
-
-        menu.classList.toggle(`menu-active`);
+            paddingBody();
+            toggleClass();
         });
     }
 
