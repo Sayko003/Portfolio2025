@@ -2,7 +2,11 @@ const gulp = require('gulp');
 const fileInclude = require('gulp-file-include');
 const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
-const server = require('gulp-server-livereload');
+
+// const server = require('gulp-server-livereload');
+const browserSync = require("browser-sync").create();
+const devip = require('dev-ip');
+
 const clean = require('gulp-clean');
 const fs = require('fs');
 const sourceMaps = require('gulp-sourcemaps');
@@ -168,14 +172,30 @@ gulp.task('js:dev', function () {
 		.pipe(gulp.dest('./build/js/'));
 });
 
-const serverOptions = {
-	livereload: true,
-	open: true,
-};
 
-gulp.task('server:dev', function () {
-	return gulp.src('./build/').pipe(server(serverOptions));
+gulp.task('browser-sync:dev', function() {
+    browserSync.init({
+        server: {
+            baseDir: "./build",
+        }
+    });
+	gulp.watch("build/*.html").on('change', browserSync.reload);
+	gulp.watch("build/css/*.css").on('change', browserSync.reload);
+	gulp.watch("build/js/*.js").on('change', browserSync.reload);
+	gulp.watch("build/img/**/*").on('change', browserSync.reload);
+	gulp.watch("build/fonts/**/*").on('change', browserSync.reload);
+	gulp.watch("build/files/**/*").on('change', browserSync.reload);
 });
+
+
+// const serverOptions = {
+// 	livereload: true,
+// 	open: true,
+// 	directoryListing: true,
+// };
+// gulp.task('server:dev', function () {
+// 	return gulp.src('./build/').pipe(server(serverOptions));
+// });
 
 gulp.task('watch:dev', function () {
 	gulp.watch('./src/scss/**/*.scss', gulp.parallel('sass:dev'));

@@ -3,6 +3,7 @@
 		"@babel/core": "^7.22.5",
 		"@babel/preset-env": "^7.22.5",
 		"css-loader": "^6.8.1",
+		"dev-ip": "^1.0.1",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^8.0.0",
 		"gulp-babel": "^8.0.0",
@@ -44,6 +45,7 @@
 	],
 	"dependencies": {
 		"avif-webp-checker": "^1.0.0",
+		"browser-sync": "^3.0.3",
 		"swiper": "^11.0.6"
 	}
 }

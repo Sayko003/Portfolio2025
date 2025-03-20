@@ -893,6 +893,68 @@
         </div>
     </div>
 </section>
+    <section class="form">
+    <div class="container">
+        <div class="form--wrapper">
+            <div class="form--img">
+                <img 
+                    src="./img/block/form/my-photo.jpg"
+                    srcset="./img/block/form/my-photo@2x.jpg 2x" 
+                    alt="Моя фотография из парка в Краснодаре"
+                >
+            </div>
+
+            <div class="form--text">
+                <h2 class="title-2">Контакты</h2>
+                <div class="subtitle">Свяжитесь со&#160;мной</div>
+                <div class="subline"></div>
+                <div class="form--descr">Любым удобным для вас способом:</div>
+                <div class="icon--social">
+    <a href="https://github.com/Sayko003" rel="noopener noreferrer" target="_blank">
+        <svg class="icon icon--item">
+            <use href="./img/svgsprite/sprite.symbol.svg#github"></use>
+        </svg>
+    </a>
+
+    <a href="https://t.me/konstantin_web003" rel="noopener noreferrer" target="_blank">
+        <svg class="icon icon--item">
+            <use href="./img/svgsprite/sprite.symbol.svg#telegram"></use>
+        </svg>
+    </a>
+
+    <a href="https://wa.me/79892672948" rel="noopener noreferrer" target="_blank">
+        <svg class="icon icon--item">
+            <use href="./img/svgsprite/sprite.symbol.svg#whatsapp"></use>
+        </svg>
+    </a>
+</div>
+                <div class="form--descr">Или оставьте ваши данные и&#160;я&#160;сам вам напишу:</div>
+                <form action="files/send.php">
+                    <div class="form--inputs">
+                        <div class="form--wrapper-input">
+                            <label class="form--label" for="name">Ваше имя</label>
+                            <input class="form--input" id="name "type="text" required autocomplete="off" placeholder="*Введите ваше имя">
+                        </div>
+
+                        <div class="form--wrapper-input">
+                            <label class="form--label" for="email">Ваша почта</label>
+                            <input class="form--input" id="email "type="email" required autocomplete="off" placeholder="*Введите вашу почту">
+                        </div>
+                    </div>
+                    <div class="form--area">
+                        <label class="form--label-area" for="message">Ваше сообщение</label>
+                        <textarea name="message" id="message" placeholder="Введите ваше сообщение, опишите свою проблему или можете указать свой номер телефона, социальные сети и я вами свяжусь."></textarea>
+                    </div>
+                    <div class="form--checkbox">
+                        <input type="checkbox" name="politic" id="politic" checked required>
+                        <label for="politic" >Я&#160;согласен (а) с&#160;<a href="politic.html">политикой конфиденциальности</a></label>
+                    </div>
+                    <button class="btn-main" type="submit">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
     <script src="./js/index.bundle.js"></script>
 </body>

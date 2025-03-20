@@ -1,0 +1,137 @@
+.form {
+    padding-bottom: 90px;
+}
+.form--wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form--img img {
+    border-radius:20px
+}
+.form--text {
+    max-width: 585px;
+    width: 100%;
+}
+.form .title-2 {
+    position: relative;
+    z-index: 1;
+    @include textCircle;
+}
+.form--descr {
+    font-weight: 700;
+    font-size: 14px;
+
+    margin-bottom: 20px;
+}
+.form .icon--social{
+    margin-bottom: 20px;
+}
+.form .icon--item{
+    fill: var(--accent);
+}
+.form .icon--item:hover{
+    fill: var(--black);
+}
+.form--inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+
+    margin-bottom: 30px;
+}
+.form--wrapper-input{
+    position: relative;
+    max-width: 280px;
+    width: 100%;
+}
+.form--label {
+    position: absolute;
+    padding: 0 5px 0 5px;
+    z-index: 1;
+    top:-7px;
+    left:15px;
+
+    background-color: var(--white);
+    font-weight: 500;
+    font-size: 12px;
+}
+.form--input {
+    display: block;
+    width: 100%;
+    padding: 14px 20px;
+
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--black);
+
+    border: 1px solid var(--black);
+}
+.form--area {
+    position: relative;
+    width: 100%;
+}
+.form--label-area{
+    position: absolute;
+    padding: 0 5px 0 5px;
+    z-index: 1;
+    top:-7px;
+    left:15px;
+
+    background-color: var(--white);
+    font-weight: 500;
+    font-size: 12px;
+}
+.form--area textarea{
+    display: block;
+    resize:none;
+    padding: 14px 20px;
+
+    width: 100%;
+    min-height: 190px;
+    outline: none;
+
+    font-weight: 500;
+    font-size: 12px;
+
+    border: 1px solid var(--black);
+    margin-bottom: 25px;
+}
+
+.form--checkbox{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.form--checkbox label{
+    font-weight: 500;
+    font-size: 12px;
+}
+@include tablet {
+    .form{
+        padding-bottom: 50px;
+    }
+    .form--text{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        max-width: 100%;
+    }
+    .form--img{
+        display: none;
+    }
+    .form--inputs{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .form--wrapper-input{
+        max-width: 100%;
+    }
+    .form--area textarea{
+        max-width: 100%;
+    }
+    .form .btn-main{
+        width: 100%;
+    }
+}

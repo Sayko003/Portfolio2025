@@ -1,6 +1,11 @@
 .portfolio {
     padding-bottom: 60px;
 }
+.portfolio .title-2{
+    position: relative;
+    z-index: 1;
+    @include textCircleCenter;
+}
 .portfolio--blocks {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px,280px));
