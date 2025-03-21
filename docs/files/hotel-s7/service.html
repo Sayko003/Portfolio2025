@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>S7 Hotels</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header__wrapper flex-center-bet">
+        <div class="header__block flex-center-bet">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/header/logo.png" alt="S7 Hotel Bityagovo и S7 Hotel Domodedovo">
+                </a>
+            </div>
+    
+            <div class="header__links flex-center-around">
+                <a href="#" class="header__link">S7 Hotel Bityagovo</a>
+                <a href="#" class="header__link">S7 Hotel Domodedovo</a>
+            </div>
+        </div>
+
+        <div class="header__contacts flex-center-bet">
+            <div class="header__phone">
+                <a href="tel:+74956510667" class="header__phone_link">+7 (495) 651-06-67</a>
+            </div>
+
+            <div class="header__lang">
+                <a href="#"></a>
+            </div>
+
+            <div class="header__word">
+                <a href="#">
+                    <img src="img/header/one-world.png" alt="One world">
+                </a>
+            </div>
+        </div>
+    </div>
+</header> 
+
+    <main class="main">
+        <section class="hero service-bg">
+            <div class="container">
+                <div class="hero__form">
+                    <div class="hero__tabs">
+                        <ul class="hero__list">
+                            <li class="hero__item hero__item_active">Проживание</li>
+                            <li class="hero__item">Беседки</li>
+                            <li class="hero__item">Конференц-зал</li>
+                            <li class="hero__item">Спортивный комплекс</li>
+                        </ul>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-1" value="Проживание">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" id="dateOne" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-2" value="Беседки">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-3" value="Конференц-зал">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-4" value="Спортивный комплекс">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service">
+            <div class="container">
+                <ul class="crumb flex-center-bet service-crumb">
+                    <li class="crumb__item"><a href="#">Главная</a></li>
+                    <li class="crumb__item">Услуги</li>
+                </ul>
+
+                <div class="service__text flex-start-bet">
+                    <h1 clasёs="service__title">Услуги</h1>
+                    <div class="service__subtitle">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов</div>
+                </div>
+
+                <div class="service__free">
+                    <h2 class="service__free_title">Бесплатные услуги</h2>
+                    <div class="service__wrapper">
+                        <div class="service__block">
+                            <div class="service__img">
+                                <img src="img/service/free/free-1.png" alt="Бесплатный Wi-Fi">
+                            </div>
+                            <div class="service__descr">Бесплатный <br> Wi-Fi</div>
+                        </div>
+
+                        <div class="service__block">
+                            <div class="service__img">
+                                <img src="img/service/free/free-2.png" alt="Ежедневная смена полотенец">
+                            </div>
+                            <div class="service__descr">Ежедневная смена <br> полотенец</div>
+                        </div>
+
+                        <div class="service__block">
+                            <div class="service__img">
+                                <img src="img/service/free/free-3.png" alt="Пробуждение по желанию гостя">
+                            </div>
+                            <div class="service__descr">Пробуждение по <br> желанию гостя</div>
+                        </div>
+
+                        <div class="service__block">
+                            <div class="service__img">
+                                <img src="img/service/free/free-4.png" alt="Хранение багажа">
+                            </div>
+                            <div class="service__descr">Хранение <br> багажа</div>
+                        </div>
+
+                        <div class="service__block">
+                            <div class="service__img">
+                                <img src="img/service/free/free-5.png" alt="Ежедневная уборка номеров">
+                            </div>
+                            <div class="service__descr">Ежедневная <br> уборка номеров</div>
+                        </div>
+
+                        <div class="service__block">
+                            <div class="service__img">
+                                <img src="img/service/free/free-6.png" alt="Замена постельного 1 раз в 3 дня">
+                            </div>
+                            <div class="service__descr">Замена постельного <br> 1 раз в 3 дня</div>
+                        </div>
+
+                        <div class="service__block">
+                            <div class="service__img">
+                                <img src="img/service/free/free-7.png" alt="Вызов такси плата за услуги службы отдельно">
+                            </div>
+                            <div class="service__descr">Вызов такси <br> плата за услуги <br> службы отдельно</div>
+                        </div>
+
+                        <div class="service__block">
+                            <div class="service__img">
+                                <img src="img/service/free/free-8.png" alt="Парковка">
+                            </div>
+                            <div class="service__descr">Парковка</div>
+                        </div>
+                    </div>
+
+                    <h2 class="service__free_title">Платные услуги</h2>
+                    <div class="service__wrapper">
+                        <div class="service__block">
+                            <div class="service__img">
+                                <img src="img/service/buy/buy-1.png" alt="Русский бильярд">
+                            </div>
+                            <div class="service__buy">
+                                <div class="service__buy_title">Русский бильярд</div>
+                                <div class="service__buy_subtitle">Бильярд - игра для настоящих <br> тактиков и стратегов.</div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A019b36e0354450fcd5d324027361b278c800db2da470293af90857e1f9c10e04&amp;source=constructor" width="100%" height="380" frameborder="0"></iframe>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+    <div class="container flex-center-bet">
+        <div class="footer__year">&copy; S7 2023</div>
+        <div class="footer__links flex-center-around">
+            <a href="#" class="footer__link">Правовая информация</a>
+            <a href="#" class="footer__link">S7 Hotel Bityagovo</a>
+            <a href="#" class="footer__link">S7 Hotel Domodedovo</a>
+        </div>
+
+        <div class="footer__phones">
+            <a href="tel:74956510667" class="footer__phone">+7 (495) 651-06-67</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

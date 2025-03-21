@@ -1,0 +1,8 @@
+@media(min-width: 1200px) and (max-width:1400px){
+    .advantage__img{
+        max-width: 510px;
+    }
+    .advantage__history_text:not(:last-child):after{
+        right: -25px;
+    }
+}

@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>S7 Hotels</title>
+</head>
+<body>
+    <header class="header">
+    <div class="header__wrapper flex-center-bet">
+        <div class="header__block flex-center-bet">
+            <div class="header__logo">
+                <a href="#">
+                    <img src="img/header/logo.png" alt="S7 Hotel Bityagovo и S7 Hotel Domodedovo">
+                </a>
+            </div>
+    
+            <div class="header__links flex-center-around">
+                <a href="#" class="header__link">S7 Hotel Bityagovo</a>
+                <a href="#" class="header__link">S7 Hotel Domodedovo</a>
+            </div>
+        </div>
+
+        <div class="header__contacts flex-center-bet">
+            <div class="header__phone">
+                <a href="tel:+74956510667" class="header__phone_link">+7 (495) 651-06-67</a>
+            </div>
+
+            <div class="header__lang">
+                <a href="#"></a>
+            </div>
+
+            <div class="header__word">
+                <a href="#">
+                    <img src="img/header/one-world.png" alt="One world">
+                </a>
+            </div>
+        </div>
+    </div>
+</header> 
+
+    <main class="main">
+        <section class="hero conf-bg">
+            <div class="container">
+                <div class="hero__form">
+                    <div class="hero__tabs">
+                        <ul class="hero__list">
+                            <li class="hero__item hero__item_active">Проживание</li>
+                            <li class="hero__item">Беседки</li>
+                            <li class="hero__item">Конференц-зал</li>
+                            <li class="hero__item">Спортивный комплекс</li>
+                        </ul>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-1" value="Проживание">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" id="dateOne" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-2" value="Беседки">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-3" value="Конференц-зал">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+
+                    <div class="hero__inputs flex-center">
+                        <div class="hero__lap">
+                            <input type="hidden" name="tab-4" value="Спортивный комплекс">
+                            <div class="hero__lap_descr">Дата заезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="1 июн, вт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>          
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" readonly="" inputmode="none" value="24 июн, чт">
+                            <div class="hero__lap_icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-event" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#97BA1E" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z"/>
+                                    <rect x="4" y="5" width="16" height="16" rx="2" />
+                                    <line x1="16" y1="3" x2="16" y2="7" />
+                                    <line x1="8" y1="3" x2="8" y2="7" />
+                                    <line x1="4" y1="11" x2="20" y2="11" />
+                                    <rect x="8" y="15" width="2" height="2" />
+                                </svg>   
+                            </div>
+                        </div>
+
+                        <div class="hero__lap">
+                            <div class="hero__lap_descr">Дата выезда</div>
+                            <input type="text" class="hero__lap_input" unselectable="on" readonly="" inputmode="none" value="2 взрослых">
+                            <div class="hero__lap_man">
+                                <svg fill="#97BA1E" width="24px" height="24px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 15.503A5.041 5.041 0 1 0 16 5.42a5.041 5.041 0 0 0 0 10.083zm0 2.215c-6.703 0-11 3.699-11 5.5v3.363h22v-3.363c0-2.178-4.068-5.5-11-5.5z"/></svg>
+                            </div>
+                        </div>
+
+                        <button class="hero__button">Найти номер</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="conf">
+            <div class="container">
+                <ul class="crumb conf-crumb flex-center-bet">
+                    <li class="crumb__item"><a href="#">Главная</a></li>
+                    <li class="crumb__item">Конференц-залы</li>
+                </ul>
+
+                <div class="conf__wrapper">
+                    <div class="conf__titles">
+                        <h1 class="conf__title">Конференц-залы</h1>
+                        <div class="conf__subtitle">для бизнес-встреч и корпоративных мероприятий</div>
+                    </div>
+
+                    <div class="conf__descrs">
+                        <div class="conf__descr">S7 Hotel Domodedovo — уютный небольшой отель для бизнес-встреч, располагающийся в 7 минутах езды от международного аэропорта Домодедово. В нашей гостинице может разместиться до 280 человек (номерной фонд составляет 135 комфортабельных номеров). Нас выбирают для проведения бизнес-встреч, корпоративных мероприятий, конференций и тренингов.
+                        </div>
+                        <button class="conf__btn">Оставить заявку на аренду</button>
+                    </div>
+                </div>
+
+                <div class="conf__wrapper-card">
+                    <div class="conf__card">
+                        <div class="conf__card_img">
+                            <img src="img/conf/cart-1.webp" alt="Конференц-зал">
+                        </div>
+
+                        <div class="conf__card_text">
+                            <div class="conf__card_title">Каминный зал</div>
+                            <div class="conf__card_subtitle">Площадь : 48,5 м</div>
+                            <div class="conf__card_subtitle">Количество человек : до 30</div>
+                            <div class="conf__card_descr">Идеально подходит для торжественного мероприятия и прекрасно транформируется в учебный класс</div>
+                            <div class="conf__card_wrapper">
+                                <div class="conf__card_btn">Подробнее</div>
+                                <div class="conf__card_prices">
+                                    <div class="conf__card_price">2 400 ₽</div>
+                                    <div class="conf__card_subprice">Стоимость в час</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conf__card">
+                        <div class="conf__card_img">
+                            <img src="img/conf/cart-2.jpg" alt="Конференц-зал">
+                        </div>
+
+                        <div class="conf__card_text">
+                            <div class="conf__card_title">Конференц-зал Панорама</div>
+                            <div class="conf__card_subtitle">Площадь : 107 м</div>
+                            <div class="conf__card_subtitle">Количество человек : до 70</div>
+                            <div class="conf__card_descr">Конференц-зал гостиницы оснащен всем необходимым современным оборудыванием для проведения успешного делового мероприятия.</div>
+                            <div class="conf__card_wrapper">
+                                <div class="conf__card_btn">Подробнее</div>
+                                <div class="conf__card_prices">
+                                    <div class="conf__card_price">4 720 ₽</div>
+                                    <div class="conf__card_subprice">Стоимость в час</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="conf__card">
+                        <div class="conf__card_img">
+                            <img src="img/conf/cart-3.png" alt="Конференц-зал">
+                        </div>
+
+                        <div class="conf__card_text">
+                            <div class="conf__card_title">Переговорная комната</div>
+                            <div class="conf__card_subtitle">Площадь : 22,1 м</div>
+                            <div class="conf__card_subtitle">Количество человек : до 13</div>
+                            <div class="conf__card_descr">Переговорная комната идеально подходит для проведения деловых встреч и тренингов</div>
+                            <div class="conf__card_wrapper">
+                                <div class="conf__card_btn">Подробнее</div>
+                                <div class="conf__card_prices">
+                                    <div class="conf__card_price">1 500 ₽</div>
+                                    <div class="conf__card_subprice">Стоимость в час</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="recomend">
+                    <h2 class="recomend__title">Почему нас рекомендуют</h2>
+                    <div class="recomend__block">
+                        <div class="recomend__img">
+                            <img src="img/conf/rec-1.png" alt="Выгодное расположение">
+                        </div>
+                        <div class="recomend__descr">Выгодное расположение</div>
+                    </div>
+
+                    <div class="recomend__block">
+                        <div class="recomend__img">
+                            <img src="img/conf/rec-2.png" alt="Спокойная атмосфера">
+                        </div>
+                        <div class="recomend__descr">Спокойная атмосфера</div>
+                    </div>
+
+                    <div class="recomend__block">
+                        <div class="recomend__img">
+                            <img src="img/conf/rec-2.png" alt="Отличный сервис">
+                        </div>
+                        <div class="recomend__descr">Отличный сервис</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hire">
+            <div class="container">
+                <h2 class="hire__title">Аренда конференц-залов</h2>
+                <div class="hire__subtitle">В гостинице S7 Hotel Domodedovo обустроено два больших конференц-зала и одна небольшая переговорная комната. Вы можете выбрать помещение, подходящее по оформлению и вместительности для проведения деловой встречи, заранее забронировав зал на нужную вам дату и время.</div>
+                <div class="hire__subtitle">Конференц-залы оснащены всем необходимым оборудованием для проведения делового мероприятия. В залах хорошая акустика, интерьер выполнен в строгом официальном стиле.</div>
+
+                <div class="hire__wrapper">
+                    <div class="hire__block">
+                        <div class="hire__img">
+                            <img src="img/conf/ar-1.png" alt="Техническое оснащение">
+                        </div>
+
+                        <div class="hire__text">
+                            <div class="hire__text_title">Техническое оснащение</div>
+                            <div class="hire__text_subtitle">помещений по вашему запросу и сопровождение бизнес- встреч</div>
+                        </div>
+                    </div>
+
+                    <div class="hire__block">
+                        <div class="hire__img">
+                            <img src="img/conf/ar-2.png" alt="Расселение гостей">
+                        </div>
+
+                        <div class="hire__text">
+                            <div class="hire__text_title">Расселение гостей</div>
+                            <div class="hire__text_subtitle">в комфортабельных номерах разных категорий</div>
+                        </div>
+                    </div>
+
+                    <div class="hire__block">
+                        <div class="hire__img">
+                            <img src="img/conf/ar-3.png" alt="Организация питания">
+                        </div>
+
+                        <div class="hire__text">
+                            <div class="hire__text_title">Организация питания</div>
+                            <div class="hire__text_subtitle">любого формата (кофе-брейки, фуршеты, деловые обеды, комплексные обеды)</div>
+                        </div>
+                    </div>
+                    
+                    <div class="hire__block">
+                        <div class="hire__img">
+                            <img src="img/conf/ar-4.png" alt="Другие услуги">
+                        </div>
+
+                        <div class="hire__text">
+                            <div class="hire__text_title">Другие услуги</div>
+                            <div class="hire__text_subtitle">по запросу можем организовать и другие виды услуг, например, трансфер</div>
+                        </div>
+                    </div>
+
+                    <div class="hire__block">
+                        <div class="hire__img">
+                            <img src="img/conf/ar-5.png" alt="Хранение вещей">
+                        </div>
+
+                        <div class="hire__text">
+                            <div class="hire__text_title">Хранение вещей</div>
+                            <div class="hire__text_subtitle"> доступна услуга хранения вещей в специальной комнате на период проживания</div>
+                        </div>
+                    </div>
+
+                    <div class="hire__block">
+                        <div class="hire__img">
+                            <img src="img/conf/ar-6.png" alt="Парковка">
+                        </div>
+
+                        <div class="hire__text">
+                            <div class="hire__text_title">Парковка</div>
+                            <div class="hire__text_subtitle">гости могут пользоваться бесплатной охраняемой парковкой</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hire__description">
+                    <div class="hire__description_img">
+                        <img src="img/conf/arr-descr.png" alt="Фото с отдыха">
+                    </div>
+
+                    <div class="hire__description_text">
+                        В S7 Hotel Domodedovo вы сможете с комфортом отдохнуть и продуктивно поработать. На каждом этаже есть бесплатный Wi-Fi, установлен кулер с питьевой проточной водой, есть мягкие уголки для отдыха. Также гости гостиницы могут воспользоваться бесплатной гладильной комнатой и прачечной за небольшую плату.Круглосуточно работает ресторан с линией раздачи, а в небольшом уютном лобби баре гости могут заказать еду по меню a la carte. Мы принимаем заказы не только на организацию деловых встреч, но и праздников — фуршетов и корпоративов «под ключ».
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="conf-full">
+            <img src="img/conf/full-bg.png" alt="Фото Конференц-зала">
+        </section>
+
+        <section class="review">
+            <div class="container">
+                <h2 class="review__title">Отзывы о номерах отеля</h2>
+                <div class="review__slider">
+                    <div class="review__photo">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="review__block">
+                                    <div class="review__top flex-center">
+                                        <div class="review__img flex-center-center">
+                                            <img src="img/svg/reviews-photo.svg" alt="Фото">
+                                        </div>
+                                        <div class="review__text">
+                                            <div class="review__name">Ирина Парфенова</div>
+                                            <div class="review__stars flex-center-bet">
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review__descr">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации </div>
+
+                                    <div class="review__date">12 февраля 2023</div>
+                                </div>
+                            </div>
+    
+                            <div class="swiper-slide">
+                                <div class="review__block">
+                                    <div class="review__top flex-center">
+                                        <div class="review__img flex-center-center">
+                                            <img src="img/svg/reviews-photo.svg" alt="Фото">
+                                        </div>
+                                        <div class="review__text">
+                                            <div class="review__name">Ирина Парфенова</div>
+                                            <div class="review__stars flex-center-bet">
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review__descr">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации </div>
+
+                                    <div class="review__date">12 февраля 2023</div>
+                                </div>
+                            </div>
+
+                            
+                            <div class="swiper-slide">
+                                <div class="review__block">
+                                    <div class="review__top flex-center">
+                                        <div class="review__img flex-center-center">
+                                            <img src="img/svg/reviews-photo.svg" alt="Фото">
+                                        </div>
+                                        <div class="review__text">
+                                            <div class="review__name">Ирина Парфенова</div>
+                                            <div class="review__stars flex-center-bet">
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                                <div class="review__star">
+                                                    <img src="img/svg/star.svg" alt="Звезда">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="review__descr">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации </div>
+
+                                    <div class="review__date">12 февраля 2023</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="review__arrows flex-center-bet">
+                        <div class="review-button-prev">
+                            <img src="img/svg/arow-slider.svg" alt="Стрелка влево">
+                        </div>
+                        <div class="review-button-next">
+                            <img src="img/svg/arow-slider.svg" alt="Стрелка вправо">
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A019b36e0354450fcd5d324027361b278c800db2da470293af90857e1f9c10e04&amp;source=constructor" width="100%" height="380" frameborder="0"></iframe>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+    <div class="container flex-center-bet">
+        <div class="footer__year">&copy; S7 2023</div>
+        <div class="footer__links flex-center-around">
+            <a href="#" class="footer__link">Правовая информация</a>
+            <a href="#" class="footer__link">S7 Hotel Bityagovo</a>
+            <a href="#" class="footer__link">S7 Hotel Domodedovo</a>
+        </div>
+
+        <div class="footer__phones">
+            <a href="tel:74956510667" class="footer__phone">+7 (495) 651-06-67</a>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,9 +1,9 @@
 
 <?php
 // Файлы phpmailer
-require 'mailer/PHPMailer.php';
-require 'mailer/SMTP.php';
-require 'mailer/Exception.php';
+require '/mailer/PHPMailer.php';
+require '/mailer/SMTP.php';
+require '/mailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
@@ -32,7 +32,7 @@ try {
     // Настройки вашей почты
     $mail->Host       = 'smtp.yandex.ru'; // SMTP сервера вашей почты
     $mail->Username   = 'Konstantin.front-end'; // Логин на почте
-    $mail->Password   = 'vlntaykvynodxsch'; // Пароль на почте
+    $mail->Password   = 'jyaksxxzdibtfmnm'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
     $mail->setFrom('Konstantin.front-end@yandex.ru', 'Сайт Портфолио'); // Адрес самой почты и имя отправителя

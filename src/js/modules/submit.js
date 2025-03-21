@@ -1,42 +1,47 @@
 function submit(){
-    const form = document.querySelector(`form`),    
-        url = `https://webdev-konstantin.ru/`,
-        info = document.querySelector('.form--info');
+    const form = document.getElementById('form'),
+        result = document.getElementById('result');
 
-    form.addEventListener(`submit`, (e) =>{
+    form.addEventListener('submit', function(e) {
         e.preventDefault();
 
-        const data = new FormData(this) // Сборка формы 
+        const formData = new FormData(form);
+        
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
 
-        fetch(url, {
-            method: 'post',
-            headers: {
-                "Content-type": "application/x-www-form-urlencoded; charset=UTF-8"
-            },
-            body: data // Отправка самой формы
+        result.innerHTML = "Пожалуйста, подождите..."
+
+        fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
             })
-            .then(response => response.json())
-            .then((json) => { // Ответ
-            if (json.id === 101) { // Для примера проверка пройдена если id === 101
-                // Добавление поля
-                info.innerHTML = `<span class="green">Ваше сообщение отправлено, свяжусь с вами в ближайшее время!</span>`
-                info.style.opacity = "1";
-                const timerGreen = setTimeout(() => {
-                    info.style.opacity = "0";
-                }, 5000)
-            }
-            // Дебаг узнать что прошла форма
-            console.log(json)
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = `<span class="green">Ваше сообщение отправлено, свяжусь с вами в ближайшее время!</span>`
+                    result.style.opacity = "1";
+                } else {
+                    console.log(response);
+                    result.innerHTML = `<span class="red">Ваше сообщение не доставлено, заполните обязательные поля формы!</span>`;
+                    result.style.opacity = "1";
+                }
             })
-            .catch(err => {
-                console.log(err);
-                info.innerHTML = '<span class="red">Ваше сообщение не доставлено, заполните обязательные поля формы!</span>'
-                info.style.opacity = "1";
-                const timerRed = setTimeout(() => {
-                    info.style.opacity = "0";
-                }, 5000)
+            .catch(error => {
+                console.log(error);
+                result.innerHTML = `<span class="red">Ваше сообщение не доставлено, заполните обязательные поля формы!</span>`;
+            })
+            .then(function() {
+                form.reset();
+                setTimeout(() => {
+                    result.style.opacity = "0";
+                }, 3000);
             });
     });
-}
+ }
 
 export default submit;

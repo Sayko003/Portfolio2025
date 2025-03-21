@@ -117,7 +117,7 @@ gulp.task('sass:docs', function () {
 		.pipe(sourceMaps.write())
 		.pipe(gulp.dest('./docs/css/'));
 });
-
+//npm config -g edit
 gulp.task('images:docs', function () {
 	return gulp
 		.src(['./src/img/**/*npm config -g edit', '!./src/img/svgicons/**/*'])
@@ -138,7 +138,7 @@ gulp.task('images:docs', function () {
 			imagemin(
 				[
 					imagemin.gifsicle({ interlaced: true }),
-					imagemin.mozjpeg({ quality: 85, progressive: true }),
+					imagemin.mozjpeg({ quality: 95, progressive: true }),
 					imagemin.optipng({ optimizationLevel: 5 }),
 				],
 				{ verbose: true }

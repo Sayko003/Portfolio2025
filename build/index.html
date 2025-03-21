@@ -70,6 +70,7 @@
 </header>
 
     <section class="menu">
+    <h2 class="visually-hidden">Меню</h2>
     <div class="overlay"></div>
     <div class="menu--wrapper">
         <button class="btn--nav">
@@ -933,16 +934,17 @@
     </a>
 </div>
                 <div class="form--descr">Или оставьте ваши данные и&#160;я&#160;сам вам напишу:</div>
-                <form action="files/send.php" method="POST">
+                <form method="POST" id="form">
                     <div class="form--inputs">
+                        <input type="hidden" name="access_key" value="421f0495-ef9c-4ede-85a4-7000dc64eeac">
                         <div class="form--wrapper-input">
                             <label class="form--label" for="name">Ваше имя</label>
-                            <input class="form--input" id="name "type="text" required autocomplete="off" placeholder="*Введите ваше имя">
+                            <input class="form--input" id="name" type="text" required autocomplete="off" placeholder="*Введите ваше имя">
                         </div>
 
                         <div class="form--wrapper-input">
                             <label class="form--label" for="email">Ваша почта</label>
-                            <input class="form--input" id="email "type="email" required autocomplete="off" placeholder="*Введите вашу почту">
+                            <input class="form--input" id="email" type="email" required autocomplete="off" placeholder="*Введите вашу почту">
                         </div>
                     </div>
                     <div class="form--area">
@@ -953,20 +955,17 @@
                         <input type="checkbox" name="policy" id="policy" checked required>
                         <label for="policy" >Я&#160;согласен (а) с&#160;<a href="policy.html" target="_blank">политикой конфиденциальности</a></label>
                     </div>
-                    <button class="btn-main g-recaptcha" type="submit" 
-                        data-sitekey="6LfHfvsqAAAAAK3-epwc935loiTcPwE4cjzLozrX" 
-                        data-callback='onSubmit' 
-                        data-action='submit'>
+                    <button class="btn-main" type="submit">
                         Отправить сообщение
                     </button>
-                    <div class="form--info"><span class="green">Ваще сообщение отправлено</span> <span class="red">Ваше сообщение не&#160;доставлено</span></div>
+                    <div class="form--info"></div>
                 </form>
             </div>
         </div>
     </div>
-</>
+</footer>
 
-    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfHfvsqAAAAAK3-epwc935loiTcPwE4cjzLozrX"></script>
+    <!-- <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfHfvsqAAAAAK3-epwc935loiTcPwE4cjzLozrX"></script> -->
     <script src="./js/index.bundle.js"></script>
 </body>
 

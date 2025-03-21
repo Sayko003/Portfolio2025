@@ -1,0 +1,79 @@
+@import "../fonts/roboto/style.scss";
+
+@import "vars";
+@import "mixins";
+@import "reset";
+@import "grid";
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-size: 1rem;
+    font-family: $font;
+    color: $color3;
+}
+
+.title {
+    font-family: $font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 136%;
+    color: $color3;
+
+    span {
+        color: $color4;
+        font-weight: 600;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .title {
+        font-size: 36px;
+        line-height: 120%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+    .title {
+        font-size: 36px;
+        line-height: 110%;
+    }
+}
+
+.btn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+address{
+    font-style: normal;
+}
+
+
+/**
+    IMPORT PLUGINS STYLES
+*/
+@import "plugins/simplebar/simplebar";
+
+/**
+    IMPORT GENERALS STYLES
+*/
+@import "generals/header/main";
+@import "animations";
+@import "generals/mobile-nav/main";
+@import "generals/footer/main";
+
+/**
+    IMPORT STYLES FOR PAGES
+*/
+// Home page
+@import "pages/home/main";
+@import "generals/modals/main";
+
+.m-0{
+    margin: 0;
+}

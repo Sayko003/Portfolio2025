@@ -1,0 +1,23 @@
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .promo-windows-cards{
+        justify-content: space-between;
+    }
+    .promo-windows-card {
+        width: 270px;
+        
+        &:not(:nth-last-child(5)) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .promo-windows-card {
+        width: 306px;
+
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1399px) {
+}
