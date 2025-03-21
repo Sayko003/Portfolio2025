@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио web-разработчика</title>
+    <meta name="description" content="Мое портфолио, на этом сайте вы сможете ознакомится с моими навыками, сайтами, которые я разрабатывал. А так же связаться со мной." />
+    <meta name="robots" content="index" />
+    <meta name="author" content="Константин Хохлов" />
+    <meta name="copyright" lang="ru" content="Константин Хохлов"/>
     <link rel="stylesheet" href="./css/main.css" />
 
     <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
@@ -335,7 +339,7 @@
                 </div>
 
                 <div class="skill--soft--title">Gulp</div>
-                <div class="skill--soft--descr">Самая популярная библиотека для создания сайтов. С&#160;помощью нее увеличивается разработка сайтов и&#160;его адаптация.</div>
+                <div class="skill--soft--descr">Gulp берёт рутину на&#160;себя. Так получается не&#160;только сэкономить время, но&#160;и&#160;снизить риск ошибок из-за ручного труда.</div>
             </div>
 
             <div class="skill--soft">
@@ -377,7 +381,7 @@
                 </div>
 
                 <div class="skill--soft--title">Jquery</div>
-                <div class="skill--soft--descr">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в&#160;проект мы&#160;её&#160;не&#160;будем, но&#160;навык работы с&#160;ней присутствует</div>
+                <div class="skill--soft--descr">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в&#160;проект мы&#160;её&#160;не&#160;будем, но&#160;навык работы с&#160;ней присутствует.</div>
             </div>
 
             <div class="skill--soft">
@@ -391,7 +395,7 @@
                 </div>
 
                 <div class="skill--soft--title">React</div>
-                <div class="skill--soft--descr">Эта библиотека позволяет создавать web-приложения. Мы&#160;можем создать максимально интерактивный продукт именно под ваши цели</div>
+                <div class="skill--soft--descr">Эта библиотека позволяет создавать web-приложения. Мы&#160;можем создать максимально интерактивный продукт именно под ваши цели.</div>
             </div>
 
             <div class="skill--soft">
@@ -405,7 +409,7 @@
                 </div>
 
                 <div class="skill--soft--title">Node.js</div>
-                <div class="skill--soft--descr">Эта платформа позволяет создавать бэкенд для вашего продукта&#160;&#8212; &#171;мозги&#187;, которые будут выполнять действия, которые пользователь не&#160;видит</div>
+                <div class="skill--soft--descr">Эта платформа позволяет создавать бэкенд для вашего продукта&#160;&#8212; &#171;мозги&#187;, которые будут выполнять действия, которые пользователь не&#160;видит.</div>
             </div>
 
             <div class="skill--soft">
@@ -419,7 +423,7 @@
                 </div>
 
                 <div class="skill--soft--title">Mongo.db</div>
-                <div class="skill--soft--descr">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</div>
+                <div class="skill--soft--descr">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения.</div>
             </div>
         </div>
 
@@ -777,7 +781,7 @@
                                 <use href="./img/svgsprite/sprite.symbol.svg#github"></use>
                             </svg>
                         </a>
-                        <a href="./files/hotheads/index.html" target="_blank">
+                        <a href="./files/profiltra/index.html" target="_blank">
                             <svg class="icon icon--arrow-rigth">
                                 <use href="./img/svgsprite/sprite.symbol.svg#arrow-rigth"></use>
                             </svg>
@@ -933,12 +937,12 @@
                     <div class="form--inputs">
                         <div class="form--wrapper-input">
                             <label class="form--label" for="name">Ваше имя</label>
-                            <input class="form--input" id="name "type="text" required autocomplete="on" placeholder="*Введите ваше имя">
+                            <input class="form--input" id="name "type="text" required autocomplete="off" placeholder="*Введите ваше имя">
                         </div>
 
                         <div class="form--wrapper-input">
                             <label class="form--label" for="email">Ваша почта</label>
-                            <input class="form--input" id="email "type="email" required autocomplete="on" placeholder="*Введите вашу почту">
+                            <input class="form--input" id="email "type="email" required autocomplete="off" placeholder="*Введите вашу почту">
                         </div>
                     </div>
                     <div class="form--area">
@@ -949,7 +953,12 @@
                         <input type="checkbox" name="policy" id="policy" checked required>
                         <label for="policy" >Я&#160;согласен (а) с&#160;<a href="policy.html" target="_blank">политикой конфиденциальности</a></label>
                     </div>
-                    <button class="btn-main" type="submit">Отправить сообщение</button>
+                    <button class="btn-main g-recaptcha" type="submit" 
+                        data-sitekey="6LfHfvsqAAAAAK3-epwc935loiTcPwE4cjzLozrX" 
+                        data-callback='onSubmit' 
+                        data-action='submit'>
+                        Отправить сообщение
+                    </button>
                     <div class="form--info"><span class="green">Ваще сообщение отправлено</span> <span class="red">Ваше сообщение не&#160;доставлено</span></div>
                 </form>
             </div>
@@ -957,6 +966,7 @@
     </div>
 </>
 
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LfHfvsqAAAAAK3-epwc935loiTcPwE4cjzLozrX"></script>
     <script src="./js/index.bundle.js"></script>
 </body>
 

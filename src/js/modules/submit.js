@@ -21,6 +21,9 @@ function submit(){
                 // Добавление поля
                 info.innerHTML = `<span class="green">Ваше сообщение отправлено, свяжусь с вами в ближайшее время!</span>`
                 info.style.opacity = "1";
+                const timerGreen = setTimeout(() => {
+                    info.style.opacity = "0";
+                }, 5000)
             }
             // Дебаг узнать что прошла форма
             console.log(json)
@@ -29,6 +32,9 @@ function submit(){
                 console.log(err);
                 info.innerHTML = '<span class="red">Ваше сообщение не доставлено, заполните обязательные поля формы!</span>'
                 info.style.opacity = "1";
+                const timerRed = setTimeout(() => {
+                    info.style.opacity = "0";
+                }, 5000)
             });
     });
 }
