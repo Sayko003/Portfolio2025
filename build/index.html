@@ -929,7 +929,7 @@
     </a>
 </div>
                 <div class="form--descr">Или оставьте ваши данные и&#160;я&#160;сам вам напишу:</div>
-                <form action="files/send.php">
+                <form action="files/send.php" method="POST">
                     <div class="form--inputs">
                         <div class="form--wrapper-input">
                             <label class="form--label" for="name">Ваше имя</label>
@@ -942,14 +942,15 @@
                         </div>
                     </div>
                     <div class="form--area">
-                        <label class="form--label-area" for="message">Ваше сообщение</label>
-                        <textarea name="message" id="message" placeholder="Введите ваше сообщение, опишите свою проблему или можете указать свой номер телефона, социальные сети и я вами свяжусь."></textarea>
+                        <label class="form--label-area" for="text">Ваше сообщение</label>
+                        <textarea name="text" id="text" placeholder="Введите ваше сообщение, опишите свою проблему или можете указать свой номер телефона, социальные сети и я вами свяжусь."></textarea>
                     </div>
                     <div class="form--checkbox">
                         <input type="checkbox" name="policy" id="policy" checked required>
                         <label for="policy" >Я&#160;согласен (а) с&#160;<a href="policy.html" target="_blank">политикой конфиденциальности</a></label>
                     </div>
                     <button class="btn-main" type="submit">Отправить сообщение</button>
+                    <div class="form--info"><span class="green">Ваще сообщение отправлено</span> <span class="red">Ваше сообщение не&#160;доставлено</span></div>
                 </form>
             </div>
         </div>

@@ -1,10 +1,9 @@
 import btnNav from "./modules/btn-nav";
-import progressBar from "./modules/progress-bar";
+import submit from "./modules/submit";
 
 
 document.addEventListener("DOMContentLoaded", function() {
     btnNav();
-    // progressBar();
-
+    submit();
     console.log(`Привет, если ты разработчик и тебе бы хотелось со мной поработать, на сайте есть ссылочки на контакты со мной. Пиши не стесняйся.`)
 });

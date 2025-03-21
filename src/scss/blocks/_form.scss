@@ -114,6 +114,22 @@
 .form--checkbox a:hover{
     color: var(--accent);
 }
+
+.form--info {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 12px;
+    opacity: 0;
+
+    transition: opacity 0.2s ease-in;
+    .green{
+        color: green;
+    }
+    .red{
+        color: red;
+    }
+}
+
 @media (hover: hover) and (pointer: coarse){
     .form--checkbox a:hover,.form--checkbox a:active, .form--checkbox a:focus{
         color:rgb(160, 3, 252);

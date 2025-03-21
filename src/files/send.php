@@ -7,7 +7,7 @@ require 'mailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
-$phone = $_POST['phone'];
+$email = $_POST['email'];
 $text = $_POST['text'];
 // $file = $_FILES['myfile'];
 
@@ -16,7 +16,7 @@ $title = "Письмо с сайта Портфолио";
 $body = "
 <h2>Новое письмо</h2>
 <b>Имя:</b> $name<br>
-<b>Email:</b> $phone<br><br>
+<b>Email:</b> $email<br><br>
 <b>Сообщение:</b><br>$text
 ";
 
@@ -60,7 +60,9 @@ $mail->Subject = $title;
 $mail->Body = $body;    
 
 // Проверяем отравленность сообщения
-if ($mail->send()) {$result = "success";} 
+if ($mail->send()) {
+    $result = "success";
+} 
 else {$result = "error";}
 
 } catch (Exception $e) {
